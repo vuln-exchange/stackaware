@@ -1,0 +1,206 @@
+<body>
+<div>
+<div class=WordSection1>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Welcome
+back to StackAware's vulnerability management course!<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Over
+the next few days, we'll dive deep into one of the major security problems
+facing organizations today: dealing with known vulnerability overload.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>In
+this lesson, we're going to take a look at the problem, and hopefully, show
+that you aren't alone in your struggles.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+mso-outline-level:3'><b><span style='font-size:13.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>First, a definition<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>By
+known vulnerabilities, I mean those which a network defenders could reasonably
+be expected to know about through some sort of scanning tool or manual
+analysis. Check out this <a
+href="https://www.blog.deploy-securely.com/p/3rd-and-greater-party-code-risk-managing"><span
+style='font-size:1.0pt'>&nbsp;</span>post<span style='font-size:1.0pt'>&nbsp;</span></a>
+for details, but know that this excludes &quot;zero days&quot; (at least prior
+to their public announcement) and other situations where an attacker is the
+only one who knows about the flaw prior to exploitation.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>You'll
+need to use other techniques (like penetration testing) to find unknown
+vulnerabilities, and they are certainly important as well. But this course
+focuses on the known type.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+mso-outline-level:3'><b><span style='font-size:13.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>There is a massive quantity of known
+vulnerabilities in most networks<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Anecdotally,
+organizations can have <a
+href="https://www.linkedin.com/posts/christianhyatt_security-vulnerabilities-vulnerabilitymanagement-activity-6977600004400046080-6BV8?utm_source=share&amp;utm_medium=member_desktop"><span
+style='font-size:1.0pt'>&nbsp;</span>40,000<span style='font-size:1.0pt'>&nbsp;</span></a>,
+<a
+href="https://ioactive.com/cvss-vulnerability-management-and-organizational-risk/"><span
+style='font-size:1.0pt'>&nbsp;</span>130,000<span style='font-size:1.0pt'>&nbsp;</span></a>,
+or more known vulnerabilities in their systems. Other practitioners have told
+me that they have seen networks with millions.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Dozens
+of new CVEs (just one type of known vulnerability) are <a
+href="https://nvd.nist.gov/general/nvd-dashboard"><span style='font-size:1.0pt'>&nbsp;</span>reported<span
+style='font-size:1.0pt'>&nbsp;</span></a> every day in the National
+Vulnerability Database (NVD). And there is a huge chunk of known issues that
+don't even <a
+href="https://flashpoint.io/blog/cve-nvd-failed-to-report-and-detail-27-3-of-vulnerabilities-in-2022-h1/"><span
+style='font-size:1.0pt'>&nbsp;</span>get reported<span style='font-size:1.0pt'>&nbsp;</span></a>
+there.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+mso-outline-level:3'><b><span style='font-size:13.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Exploitability of known
+vulnerabilities is difficult to gauge<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Many,
+if not most of the entries in the NVD are &quot;<a
+href="https://www.blog.deploy-securely.com/p/confronting-mark-curpheys-critiques"><span
+style='font-size:1.0pt'>&nbsp;</span>science projects<span style='font-size:
+1.0pt'>&nbsp;</span></a>&quot; that were exploited under very narrow
+circumstances by researchers. As a result, multiple studies suggest that <a
+href="https://www.blog.deploy-securely.com/p/but-is-it-exploitable"><span
+style='font-size:1.0pt'>&nbsp;</span>90%<span style='font-size:1.0pt'>&nbsp;</span></a>
+or more of CVEs aren't exploitable in a given configuration.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>While
+most application security <a
+href="https://www.blog.deploy-securely.com/p/application-security-tools"><span
+style='font-size:1.0pt'>&nbsp;</span>tools<span style='font-size:1.0pt'>&nbsp;</span></a>
+generally can't determine exploitability, they <i>will </i>generally flag
+libraries and components that have known vulnerabilities in them. This makes
+the signal-to-noise ratio very low and wastes valuable time on the part of
+informations security teams (e.g. you!) who need to triage a lot of issues that
+present very low risk.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+mso-outline-level:3'><b><span style='font-size:13.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>The Common Vulnerability Scoring
+System (CVSS) is a broken industry standard<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>In
+addition to the fact that most vulnerability scanner findings aren't
+exploitable is the unfortunate reality that the way they are scored - generally
+with the CVSS - does <a
+href="https://www.blog.deploy-securely.com/p/cvss-an-inappropriate-industry-standard"><span
+style='font-size:1.0pt'>&nbsp;</span>not<span style='font-size:1.0pt'>&nbsp;</span></a>
+make sense.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Many
+organizations use a strategy of prioritizing &quot;high&quot; and
+&quot;critical&quot; findings (meaning they have a CVSS score of 7.0+) for
+remediation and leaving other issues for later (or never fixing them at all).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Despite
+<a
+href="https://www.balbix.com/blog/5-reasons-to-stop-using-cvss-scores-to-measure-risk/"><span
+style='font-size:1.0pt'>&nbsp;</span>many<span style='font-size:1.0pt'>&nbsp;</span></a><a
+href="https://www.tenable.com/blog/why-you-need-to-stop-using-cvss-for-vulnerability-prioritization"><span
+style='font-size:1.0pt'>&nbsp;</span> organizations<span style='font-size:1.0pt'>&nbsp;</span></a>,
+including the one that <a href="https://www.first.org/epss/model"><span
+style='font-size:1.0pt'>&nbsp;</span>created<span style='font-size:1.0pt'>&nbsp;</span></a>
+the CVSS and the <a
+href="https://www.blog.deploy-securely.com/p/revealing-the-governments-approach"><span
+style='font-size:1.0pt'>&nbsp;</span>United States Government<span
+style='font-size:1.0pt'>&nbsp;</span></a>, pointing out that this strategy is
+highly counterproductive, many security teams continue to pursue it or even
+demand their vendors do the same.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+mso-outline-level:3'><b><span style='font-size:13.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Enterprises are overwhelmed<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Prior
+to being breached in 2017 via <a
+href="https://www.synopsys.com/blogs/software-security/equifax-apache-struts-vulnerability-cve-2017-5638/"><span
+style='font-size:1.0pt'>&nbsp;</span>CVE-2017-5638<span style='font-size:1.0pt'>&nbsp;</span></a>,
+for which it was fined <a
+href="https://www.ftc.gov/news-events/news/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related-2017-data-breach"><span
+style='font-size:1.0pt'>&nbsp;</span>$575 million<span style='font-size:1.0pt'>&nbsp;</span></a>,
+the credit monitoring company Equifax was using manual, <a
+href="https://www.hsgac.senate.gov/imo/media/doc/FINAL%20Equifax%20Report.pdf"><span
+style='font-size:1.0pt'>&nbsp;</span>email-driven<span style='font-size:1.0pt'>&nbsp;</span></a>
+processes to prioritize vulnerabilities for remediation. It also had a backlog
+of over 1000 known vulnerabilities on <a
+href="https://www.hsgac.senate.gov/imo/media/doc/FINAL%20Equifax%20Report.pdf"><span
+style='font-size:1.0pt'>&nbsp;</span>internet-facing<span style='font-size:
+1.0pt'>&nbsp;</span></a> systems <i>alone</i>. At the time of the breach,
+Equifax's market capitalization was over <a
+href="https://companiesmarketcap.com/equifax/marketcap/"><span
+style='font-size:1.0pt'>&nbsp;</span>$17 billion<span style='font-size:1.0pt'>&nbsp;</span></a>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Let
+that sink in: a deca-billion dollar company safeguarding incredibly sensitive
+data was struggling to manage its vulnerabilities so much it was eventually
+breached by one known to be exploitable...<a
+href="https://arstechnica.com/information-technology/2017/09/massive-equifax-breach-caused-by-failure-to-patch-two-month-old-bug/"><span
+style='font-size:1.0pt'>&nbsp;</span>two months<span style='font-size:1.0pt'>&nbsp;</span></a>
+after being publicly announced!<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>But
+the thing is, this isn't rare at all.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>According
+to one research study, most organizations appear to have a &quot;<a
+href="https://securityscorecard.pathfactory.com/risk-intelligence/cyentia-fast-and-frivolous"><span
+style='font-size:1.0pt'>&nbsp;</span>natural limit<span style='font-size:1.0pt'>&nbsp;</span></a>&quot;
+of being able to remediate only 10% of the total vulnerabilities in their
+network each month. So almost no organization, irrespective of size, will be
+able to just &quot;fix everything.&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+mso-outline-level:3'><b><span style='font-size:13.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>How do I deal with this problem?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>As
+you can see, basically everyone is dealing with vulnerability overload. And
+considering that attackers begin <a
+href="https://www.mandiant.com/resources/blog/time-between-disclosure-patch-release-and-vulnerability-exploitation"><span
+style='font-size:1.0pt'>&nbsp;</span>exploiting<span style='font-size:1.0pt'>&nbsp;</span></a>
+known vulnerabilities almost immediately upon publication, this means that <i>prioritizing</i>
+effectively is the single most important task in vulnerability management.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>We'll
+look at how to do this beginning with Day 2's lesson.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>See
+you tomorrow!<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>P.S.
+Hit reply to let me know why you are taking this course or if you have any
+feedback!<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
