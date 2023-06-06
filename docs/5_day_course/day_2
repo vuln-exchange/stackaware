@@ -1,0 +1,232 @@
+<html>
+<body>
+<div>
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Welcome
+back!<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>For
+day 2 of the StackAware vulnerability management course, we're going to look at
+how to tackle the problem of vulnerability overload we explored in <a
+href="https://docs.google.com/document/d/1-edxY9QbRjGWV2UHilmEqf9ClWrCNL_qVyZJZ3cywdc/edit#heading=h.r5nne8ppenu2"><span
+style='font-size:1.0pt'>&nbsp;</span>day 1<span style='font-size:1.0pt'>&nbsp;</span></a>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>It
+all begins with a risk-based approach.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+mso-outline-level:3'><b><span style='font-size:13.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Vulnerability management is risk
+management<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>If
+patching software or otherwise fixing a vulnerability is easy to do, then just
+do it! No need to worry much about prioritization if it's as easy as updating
+your iPhone.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Unfortunately,
+for most businesses, it's not this simple.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Legacy
+applications, complex tech stacks, and concerns about downtime mean that you
+can't constantly be updating every system in your network. So you need to make
+tough decisions.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>The
+key here is trading off risk vs. reward.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Vulnerabilities
+can create the risk of suffering a data breach or other cybersecurity incident.
+But your business needs to make revenue (the reward), so you usually can't
+knock a critical system offline to patch everything immediately.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Understanding
+which of the four risk management <a
+href="https://www.blog.deploy-securely.com/p/the-four-horsemen-of-risk-management"><span
+style='font-size:1.0pt'>&nbsp;</span>actions<span style='font-size:1.0pt'>&nbsp;</span></a>
+(mitigate, transfer, avoid, and accept) makes the most sense requires an
+understanding of the financial value to be gained (or preserved) in each case.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>That's
+where quantitative analysis comes in; you need to put a dollar value on the
+risk posed by each vulnerability.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Attackers
+don't care how many &quot;criticals&quot; you remediated this month and neither
+should your business leadership. So take CVSS and just throw it out the window
+right now.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>If
+you absolutely insist on using a non-quantitative approach, then check out <a
+href="https://www.blog.deploy-securely.com/p/a-somewhat-dreadful-vulnerability"><span
+style='font-size:1.0pt'>&nbsp;</span>DREAD<span style='font-size:1.0pt'>&nbsp;</span></a>
+or the Microsoft SDL <a
+href="https://www.blog.deploy-securely.com/p/hurdling-the-bug-bar"><span
+style='font-size:1.0pt'>&nbsp;</span>Bug Bar<span style='font-size:1.0pt'>&nbsp;</span></a>.
+But I won't be going deep on these in this course.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+mso-outline-level:3'><b><span style='font-size:13.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>The cyber risk management formula<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>There
+are many different ways you can get the financial value of a vulnerability and
+there are already some great existing frameworks such as the <a
+href="https://www.fairinstitute.org/"><span style='font-size:1.0pt'>&nbsp;</span>FAIR
+method<span style='font-size:1.0pt'>&nbsp;</span></a> and the <a
+href="https://www.amazon.com/How-Measure-Anything-Cybersecurity-Risk/dp/1536669741"><span
+style='font-size:1.0pt'>&nbsp;</span>Hubbard/Seiersen<span style='font-size:
+1.0pt'>&nbsp;</span></a> approach.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>While
+these techniques are relatively complex, you can really <a
+href="https://www.blog.deploy-securely.com/p/how-much-will-exploitation-of-a-critical"><span
+style='font-size:1.0pt'>&nbsp;</span>boil<span style='font-size:1.0pt'>&nbsp;</span></a>
+them down to:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>Annual
+risk = annual frequency of cyber incident happening x financial impact of it
+happening</span><span style='font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>A
+more technical way of saying this is:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>Annual
+loss expectancy (dollars per yer) = annual rate of occurrence (number of times
+per year) x single loss expectancy (dollars)</span><span style='font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>To
+abbreviate:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>ALE
+($/yr) = ARO (times/year) x SLE ($)</span><span style='font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Note
+that ARO can (and generally should be!) less than 1, indicating that most
+incidents happen less frequently than once a year.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Additionally,
+it is possible to break down SLE further:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Times New Roman"'>SLE
+= asset value ($) x exposure factor (percentage)</span><span style='font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Since
+not every attack or event would necessarily result in the complete loss of an
+asset, we may need to scale the SLE by an appropriate value. That's the
+exposure factor. This will come into play in the next lesson when looking at
+some more advanced methods for calculating risk.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+mso-outline-level:3'><b><span style='font-size:13.5pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Applying this to the real world, and
+a caveat<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>&quot;So
+what do I do with this formula?&quot; you might reasonably ask.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>I
+agree that the devil is in the details with these types of things, so stay
+tuned for the next lesson. In it, I'll explore three different methods for
+implementing it in real-world situations.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Before
+then, though, I need make an important point. Critics of quantitative cyber
+risk management will often say &quot;there are too many unknowns to make a
+numerical estimate.&quot; And while there are certainly things we can't know,
+we do know some things for certain.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>For
+example, <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-44228"><span
+style='font-size:1.0pt'>&nbsp;</span>CVE-2021-44228<span style='font-size:1.0pt'>&nbsp;</span></a>
+(log4shell, probably the worst security vulnerability in history) is more
+likely to be exploited in the wild than <a
+href="https://nvd.nist.gov/vuln/detail/CVE-2017-8283"><span style='font-size:
+1.0pt'>&nbsp;</span>CVE-2017-8283<span style='font-size:1.0pt'>&nbsp;</span></a>
+(which cannot be exploited in the default configuration of Ubuntu, where it is
+often found).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>If
+you have a problem with that statement, then I'm not sure what to tell you.
+Because you must also believe that there is no way to calculate the odds of me
+getting abducted by aliens on the way to work vs. arriving safely after my
+morning commute.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>My
+point here is that, yes, of course there is uncertainty. And no, we won't be
+able to make risk predictions with complete accuracy. You should hedge
+appropriately when communicating with others, making clear that what you are
+providing is an estimate. This is important when dealing with skeptics who will
+claim you are implying an unrealistic level of precision.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>Both
+the <a href="https://www.fairinstitute.org/"><span style='font-size:1.0pt'>&nbsp;</span>FAIR
+method<span style='font-size:1.0pt'>&nbsp;</span></a> and <a
+href="https://www.amazon.com/How-Measure-Anything-Cybersecurity-Risk/dp/1536669741"><span
+style='font-size:1.0pt'>&nbsp;</span>Hubbard/Seiersen<span style='font-size:
+1.0pt'>&nbsp;</span></a> approach use more advanced methods of statistical
+modeling such as the Monte Carlo method to better represent this uncertainty.
+And you should by all means read their books if you have the time and money.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>But
+I'm guessing you signed up for a free email course on vulnerability management
+rather than buy some books because you don't have enough of either.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>So
+know that, while I absolutely admit that the techniques I am recommending are
+not perfect, they are <i>good enough </i>for the vast majority of situations.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>And
+certainly better than the status quo of CVSS.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>So
+catch you tomorrow!<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>P.S.
+Want a ready-built app that does the number-crunching for you? Take the
+StackAware <a href="https://app.stackaware.com/"><span style='font-size:1.0pt'>&nbsp;</span>platform<span
+style='font-size:1.0pt'>&nbsp;</span></a> for a test-drive right now!<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+</body>
+</html>
