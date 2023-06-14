@@ -1,39 +1,63 @@
 <html>
 <title>Day 3: Putting a dollar figure on every vulnerability</title>
 <body>
-<p>Great progress so far!</p>
+<p style="font-size: 16px;">Great progress so far!</p>
 
-<p>If you have made it here, I am pretty confident that you are now ahead of 90% of cybersecurity pros when it comes to vulnerability management.</p>
+<p style="font-size: 16px;">If you have made it here, I am pretty confident that you are now ahead of 90% of cybersecurity pros when it comes to vulnerability management.</p>
 
-<p>And you'll soon be impressing your business counterparts by providing very clear estimates regarding cyber risk.</p><p>Using the framework from yesterday's <a href="https://vuln-exchange.github.io/stackaware/5_day_course/day_2.html">lesson</a>, we'll now take a look at how to apply the risk management formula in practice.</p>
+<p style="font-size: 16px;">And you'll soon be impressing your business counterparts by providing very clear estimates regarding cyber risk.</p><p>Using the framework from yesterday's <a href="https://vuln-exchange.github.io/stackaware/5_day_course/day_2.html">lesson</a>, we'll now take a look at how to apply the risk management formula in practice.</p>
 
 <h1>Method 1 - treat your whole network or product as monolithic and only use one SLE</h1>
 
-<p>This is probably the easiest thing to do from an information gathering and calculation perspective.</p>
+<p style="font-size: 16px;">This is probably the easiest thing to do from an information gathering and calculation perspective.</p>
 
-<p>Essentially, you don't break down your different assets (applications, servers, etc.) by their relative value to your operations. And you just assume there is a single "generic" type of cyber attack when calculating your SLE.</p>
+<p style="font-size: 16px;">Essentially, you don't break down your different assets (applications, servers, etc.) by their relative value to your operations. And you just assume there is a single "generic" type of cyber attack when calculating your SLE.</p>
 
-<p>For example, if you have annual revenue of $400,000, you might assume that this generic incident would result in a loss of a quarter's worth of revenue. Thus your SLE is $100,000 for every vulnerability.</p>
+<p style="font-size: 16px;">For example, if you have annual revenue of $400,000, you might assume that this generic incident would result in a loss of a quarter's worth of revenue. Thus your SLE is $100,000 for every vulnerability.</p>
 
-<p>For an extremely detailed breakdown of how to do this on an organization level, check out the StackAware <a href="https://vulnsentinel.atlassian.net/wiki/spaces/VULN/pages/69861411/Impact">guide</a> to determining impact.</p>
+<p style="font-size: 16px;">For an extremely detailed breakdown of how to do this on an organization level, check out the StackAware <a href="https://vulnsentinel.atlassian.net/wiki/spaces/VULN/pages/69861411/Impact">guide</a> to determining impact.</p>
 
-<p>This approach also will be necessary if you are trying to manage vulnerabilities in products running in multiple networks you do not operate (e.g. you provide software to your customers who then run it on-premises). Since it will be very difficult to know the impact of a successful exploitation to someone <i>else's</i> business, you can just make an assumption about what it would cost yours from a reputation, customer retention, and potentially regulatory impact.</p>
+<p style="font-size: 16px;">This approach also will be necessary if you are trying to manage vulnerabilities in products running in multiple networks you do not operate (e.g. you provide software to your customers who then run it on-premises). Since it will be very difficult to know the impact of a successful exploitation to someone <i>else's</i> business, you can just make an assumption about what it would cost yours from a reputation, customer retention, and potentially regulatory impact.</p>
 
-<p>Now that you have SLE, you multiply it by ARO to get your ALE.</p>
+<p style="font-size: 16px;">Now that you have SLE, you multiply it by ARO to get your ALE.</p>
 
-<p>How do you get the ARO, you might ask? Well, first you need to determine the likelihood of a given vulnerability being exploited in the next 365 days. This can be tough, but there are free tools you can use. The best one I have seen is the Exploit Prediction Scoring System (<a href="https://www.blog.deploy-securely.com/p/deep-dive-into-the-epss">EPSS</a>). Based on a machine learning model, it provides a probability that any given CVE will be exploited in the next 30 days.</p>
+<p style="font-size: 16px;">How do you get the ARO, you might ask? Well, first you need to determine the likelihood of a given vulnerability being exploited in the next 365 days. This can be tough, but there are free tools you can use. The best one I have seen is the Exploit Prediction Scoring System (<a href="https://www.blog.deploy-securely.com/p/deep-dive-into-the-epss">EPSS</a>). Based on a machine learning model, the EPSS provides a probability that any given CVE will be exploited in the next 30 days.</p>
+ 
+ <h2>The Exploit Prediction Scoring System</h2>
+ <p style="font-size: 16px;"> You can check out this <a href="https://stackaware.com/blog/exploit-prediction-scoring-system-epss-uses-and-misconceptions">article</a> for more details, but I think the below two images summarize the value of the EPSS quite effectively</p>
+ <br>
+  <a href="https://media.licdn.com/dms/image/D4E22AQFenxKEraDjaw/feedshare-shrink_800/0/1685994110504?e=1689206400&v=beta&t=_d1IAWga7q3OEZaxXrlTd2iVuj2gT37142m-xUOYvUU">
+  <img src="https://media.licdn.com/dms/image/D4E22AQFenxKEraDjaw/feedshare-shrink_800/0/1685994110504?e=1689206400&v=beta&t=_d1IAWga7q3OEZaxXrlTd2iVuj2gT37142m-xUOYvUU" alt="CVSS coverage requirement" style="width:100%;">
+</a>
+ <br>
+  <a href="https://images.squarespace-cdn.com/content/v1/61182d63aeccc95714de714d/8f880da8-05c9-4a9e-9eb2-3d80806077ca/EPSS_effort_level.png?format=500w">
+  <img src="https://images.squarespace-cdn.com/content/v1/61182d63aeccc95714de714d/8f880da8-05c9-4a9e-9eb2-3d80806077ca/EPSS_effort_level.png?format=500w" alt="EPSS coverage requirement" style="width:100%;">
+</a>
+ <br>
+ <p style="font-size: 16px;">Basically, what these charts show is that, to get the same risk reduction from remediating CVEs, you will need to about 1/8th the effort if using the EPSS versus a CVSS "high and criticals" (7.0+) strategy.</p>
+ <br>
 
-<p>Using some math (that is publicly <a href="https://github.com/Deploying-Securely/DSRAM">available</a>), you can convert this to a 365 day score with the Deploy Securely Risk Assessment Model (DSRAM - more to follow below).</p>
+<p style="font-size: 34px;">That's a huge savings in terms of effort!</p>
+ 
+<p style="font-size: 16px;">While the EPSS does have detractors, we think that these criticisms are primarily straw men, and elaborate in depth in this <a href="https://www.blog.deploy-securely.com/p/why-you-probably-should-use-epss">post</a>.</p>
+ 
+<p style="font-size: 16px;">And if you are interested in how the EPSS stacks up in certain situtations where CVEs are known to have been exploited, check out these <a href="https://stackaware.com/blog/epss-vs-kev-comparison"two</a> <a href="https://stackaware.com/blog/epss-kev-real-world-examples">articles</a>.</p>
 
-<p>There are a lot of limitations with this approach, namely that not all cyber incidents are created equal. Thus, your calculations are likely to be quite rough. With that said, I am <i>very</i> confident this is a far superior approach to using CVSS or similar qualitative methods.</p>
+<p style="font-size: 16px;">Finally, if you want to know what to do when a vulnerability is not a CVE, check out this <a href="https://www.blog.deploy-securely.com/p/the-deploying-securely-risk-assessment-ded">post</a> for how to determine an implied score based on characteristics of the vulnerability</p>
+
+<h2>Back to calculating ALE</h2>
+ 
+<p style="font-size: 16px;">Using some math (that is publicly <a href="https://github.com/Deploying-Securely/DSRAM">available</a>), you can convert this to a 365 day score with the Deploy Securely Risk Assessment Model (DSRAM - more to follow below).</p>
+
+<p style="font-size: 16px;">There are a lot of limitations with this approach, namely that not all cyber incidents are created equal. Thus, your calculations are likely to be quite rough. With that said, I am <i>very</i> confident this is a far superior approach to using CVSS or similar qualitative methods.</p>
 
 <h1>Method 2 - evaluate vulnerabilities by asset and CIA attributes</h1>
 
-<p>Things get a little more complex here, as you need to break down your network into separate assets, identifying the confidentiality, integrity, and availability (<a href="https://www.linkedin.com/posts/walter-haydock_the-cia-triad-representing-the-confidentiality-activity-7006618390941360129-kntH?utm_source=share&amp;utm_medium=member_desktop">CIA</a>) values for each one.</p>
+<p style="font-size: 16px;">Things get a little more complex here, as you need to break down your network into separate assets, identifying the confidentiality, integrity, and availability (<a href="https://www.linkedin.com/posts/walter-haydock_the-cia-triad-representing-the-confidentiality-activity-7006618390941360129-kntH?utm_source=share&amp;utm_medium=member_desktop">CIA</a>) values for each one.</p>
 
-<p>This will require a solid business impact analysis (BIA) in place to understand what the impact to your operations would be in various circumstances.</p>
+<p style="font-size: 16px;">This will require a solid business impact analysis (BIA) in place to understand what the impact to your operations would be in various circumstances.</p>
 
-<p>For example, you would need to know the approximate financial cost if:</p>
+<p style="font-size: 16px;">For example, you would need to know the approximate financial cost if:</p>
 
 <ul>
  <li>385 records from database A were breached and leaked on the internet;</li>
@@ -41,39 +65,39 @@
  <li>You lost the availability of server C for 5 hours.</li>
 </ul>
 
-<p>I won't get into how to do a BIA here because that's a whole separate course, but even just estimates can be helpful.</p>
+<p style="font-size: 16px;">I won't get into how to do a BIA here because that's a whole separate course, but even just estimates can be helpful.</p>
 
-<p>Once you have this information, the good news is that the DSRAM the resulting calculations for you. Check these guides out for how to calculate risk for <a href="https://www.blog.deploy-securely.com/p/the-deploying-securely-risk-assessment?s=w">CVEs</a> and <a href="https://www.blog.deploy-securely.com/p/the-deploying-securely-risk-assessment-ded">non-CVEs</a>. Or just go straight to this free <a href="https://colab.research.google.com/drive/1q-04x9zgO9Nh5ap1XmkMJfwm-ahaqkce?usp=sharing">calculator</a> I built.</p>
+<p style="font-size: 16px;">Once you have this information, the good news is that the DSRAM the resulting calculations for you. Check these guides out for how to calculate risk for <a href="https://www.blog.deploy-securely.com/p/the-deploying-securely-risk-assessment?s=w">CVEs</a> and <a href="https://www.blog.deploy-securely.com/p/the-deploying-securely-risk-assessment-ded">non-CVEs</a>. Or just go straight to this free <a href="https://colab.research.google.com/drive/1q-04x9zgO9Nh5ap1XmkMJfwm-ahaqkce?usp=sharing">calculator</a> I built.</p>
 
-<p>By plugging in information regarding the CIA attributes of your asset and the vulnerabilities impacting it, you can get a quick idea of the financial risk.</p>
+<p style="font-size: 16px;">By plugging in information regarding the CIA attributes of your asset and the vulnerabilities impacting it, you can get a quick idea of the financial risk.</p>
 
-<p>Although this approach is more accurate than the first one, it also has limitations.</p>
+<p style="font-size: 16px;">Although this approach is more accurate than the first one, it also has limitations.</p>
 
-<p>First of all, most organizations just use the most exploitable vulnerability when calculating the risk to an asset. This is directionally correct and probably won't throw things off too much, but it's not technically the right way to do things from a statistical perspective.</p>
+<p style="font-size: 16px;">First of all, most organizations just use the most exploitable vulnerability when calculating the risk to an asset. This is directionally correct and probably won't throw things off too much, but it's not technically the right way to do things from a statistical perspective.</p>
 
-<p>Additionally, the DSRAM only lets you set the exposure factor at the level of each asset's CIA attributes. Different <i>vulnerabilities</i> might impact different attributes in different ways, e.g. one might only allow an attacker to impact availability while another might allow it to only corrupt the integrity of data.</p>
+<p style="font-size: 16px;">Additionally, the DSRAM only lets you set the exposure factor at the level of each asset's CIA attributes. Different <i>vulnerabilities</i> might impact different attributes in different ways, e.g. one might only allow an attacker to impact availability while another might allow it to only corrupt the integrity of data.</p>
 
-<p>If you are using this technique, however, you are <i>far</i> ahead of most enterprises when it comes to risk-based vulnerability management.</p>
+<p style="font-size: 16px;">If you are using this technique, however, you are <i>far</i> ahead of most enterprises when it comes to risk-based vulnerability management.</p>
 
 <h1>Method 3 - evaluate each vulnerability by CIA impact and cumulative risk against an asset</h1>
 
-<p>I'm not going to get into this method for this email course because frankly, it's too advanced. Although from a mathematical perspective it's the most accurate, it is very difficult to do without the proper tooling.</p>
+<p style="font-size: 16px;">I'm not going to get into this method for this email course because frankly, it's too advanced. Although from a mathematical perspective it's the most accurate, it is very difficult to do without the proper tooling.</p>
 
-<p>Essentially, this approach takes into account CIA impacts at the individual vulnerability level and treats the cumulative probability of a cyber incident happening as the product of the likelihood of multiple independent events occurring (exploitations of each vulnerability).</p>
+<p style="font-size: 16px;">Essentially, this approach takes into account CIA impacts at the individual vulnerability level and treats the cumulative probability of a cyber incident happening as the product of the likelihood of multiple independent events occurring (exploitations of each vulnerability).</p>
 
-<p> This is challenging to do without automated tooling (which StackAware provides), so if you are interested in this approach, please check out the StackAware SaaS <a href="https://app.stackaware.com/">platform</a>.</p>
+<p style="font-size: 16px;">This is challenging to do without automated tooling (which StackAware provides), so if you are interested in this approach, please check out the StackAware SaaS <a href="https://app.stackaware.com/">platform</a>.</p>
 
  <h1>Bringing it home</h1>
 
-<p>Alright - awesome job! You've made it through a bunch of formulas and are still with me.</p>
+<p style="font-size: 16px;">Alright - awesome job! You've made it through a bunch of formulas and are still with me.</p>
 
-<p>Whichever approach you use, I would make sure to be clear about documenting your assumptions and explaining the potential limitations.</p>
+<p style="font-size: 16px;">Whichever approach you use, I would make sure to be clear about documenting your assumptions and explaining the potential limitations.</p>
 
-<p>Since organizations have vastly different levels of sophistication, it is certainly appropriate for them to use different methods of evaluating the risk posed by security vulnerabilities.</p>
+<p style="font-size: 16px;">Since organizations have vastly different levels of sophistication, it is certainly appropriate for them to use different methods of evaluating the risk posed by security vulnerabilities.</p>
 
-<p>Choose what's right for you.</p>
+<p style="font-size: 16px;">Choose what's right for you.</p>
 
-<p>Tomorrow, we are going to get into best practices for structuring your program from an organizational perspective by developing a risk appetite and formal policy.</p>
+<p style="font-size: 16px;">Tomorrow, we are going to get into best practices for structuring your program from an organizational perspective by developing a risk appetite and formal policy.</p>
 
 </body>
 </html>
