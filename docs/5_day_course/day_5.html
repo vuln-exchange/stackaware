@@ -1,76 +1,76 @@
 <html>
 <title>Day 5: Measuring vulnerability management success</title>
 <body>
-<p>We made it!</p>
+<p style="font-size: 16px;">We made it!</p>
 
-<p>Welcome to the final day of the StackAware vulnerability management course. Make sure to catch up on yesterday's <a href="https://vuln-exchange.github.io/stackaware/5_day_course/day_4.html">content</a> first if you missed it.</p>
+<p style="font-size: 16px;">Welcome to the final day of the StackAware vulnerability management course. Make sure to catch up on yesterday's <a href="https://vuln-exchange.github.io/stackaware/5_day_course/day_4.html">content</a> first if you missed it.</p>
 
-<p>After the first four days, you should have a solid foundation of knowledge for building out your program.</p>
+<p style="font-size: 16px;">After the first four days, you should have a solid foundation of knowledge for building out your program.</p>
 
-<p>Since I'm big into quantification, I think it's that you measure how well your program is working once it's up and running. So I'll run through a few metrics you might consider looking at.</p>
+<p style="font-size: 16px;">Since we're big into quantification, we think it's that you measure how well your program is working once it's up and running. So I'll run through a few metrics you might consider looking at.</p>
 
 <h1>Mean/median time to resolution/remediation (MTTR)</h1>
 
-<p>This is a pretty common one you'll see throughout the cybersecurity industry, 
+<p style="font-size: 16px;">This is a pretty common one you'll see throughout the cybersecurity industry, 
 and it's applicable to a bunch of different situations (incident closure, patching, etc.).</p>
 
-<p>Unfortunately, it's also somewhat of a blunt instrument when it comes to measuring vulnerability resolution.</p
+<p style="font-size: 16px;">Unfortunately, it's also somewhat of a blunt instrument when it comes to measuring vulnerability resolution.</p
 
-<p>If you are using the mean, know that a few outliers can really throw things off, e..g. a vulnerability 
+<p style="font-size: 16px;">If you are using the mean, know that a few outliers can really throw things off, e..g. a vulnerability 
 that sat unmediated for five years). So you should probably use the median instead, if you are taking this approach.</p>
 
-<p>Furthermore, it's not especially correlated to risk reduction, especially if you are looking at all vulnerabilities as
+<p style="font-size: 16px;">Furthermore, it's not especially correlated to risk reduction, especially if you are looking at all vulnerabilities as
 a whole. Fixing a vulnerability creating a lower risk might be technically easier than remediating one introducing a higher 
 risk, so quickly fixing the low-hanging fruit isn't necessarily the best way to go. And if you lump all vulnerability together,
 you might even incentivize team members to "juice" the number in a sub-optimal way (from a risk management perspective).</p>
 
-<p>For a detailed look at the pitfalls of MTTR, please check out this <a href="https://stackaware.com/blog/rethinking-mean-time-to-remediation-mttr-in-vulnerability-management">article</a> on the StackAware blog.
+<p style="font-size: 16px;">For a detailed look at the pitfalls of MTTR, please check out this <a href="https://stackaware.com/blog/rethinking-mean-time-to-remediation-mttr-in-vulnerability-management">article</a> on the StackAware blog.
 
-<p>But if you are going to use MTTR, I would suggest bucketing different vulnerabilities into separate bands of risk 
+<p style="font-size: 16px;">But if you are going to use MTTR, I would suggest bucketing different vulnerabilities into separate bands of risk 
 (check out yesterday's email for an example). That way, if you are slow in fixing ones with $100,000+ ALE but quick in fixing
 ones below $10,000, you'll be able to tell.</p>
 
 <h1>Risk tolerance maintenance</h1>
 
-<p>This approach is more advanced and requires that you carefully track your risk "budget" over time
+<p style="font-size: 16px;">This approach is more advanced and requires that you carefully track your risk "budget" over time
 (I would recommend a trailing 365 day period). Essentially, what you would examine is how much time your network's or 
 product's total risk exceeded its appetite and by how much.</p>
 
-<p>I lay out a comprehensive <a href="https://www.blog.deploy-securely.com/p/managing-your-risk-surface">framework</a> 
+<p style="font-size: 16px;">I lay out a comprehensive <a href="https://www.blog.deploy-securely.com/p/managing-your-risk-surface">framework</a> 
 for doing so in this post, but the key here is that you are tracking <i>cumulative</i> risk. Since hackers care not a whiff 
 for when you discovered a vulnerability, measuring yourself at how quickly you close them out after doing so probably 
 isn't a best practice from a risk management perspective.</p>
 
-<p>And as I point out in the post, total vulnerability counts by themselves aren't even that useful. You can have thousands 
+<p style="font-size: 16px;">And as I point out in the post, total vulnerability counts by themselves aren't even that useful. You can have thousands 
 of extremely minor issues in your network but if there is one "big one" like log4shell hanging out, you should probably worry 
 about that before anything else.</p>
 
 <h1>Closing thoughts</h1>
-<p>Vulnerability management is a tough job. Very few people - even those in security - understand it that well and 
+<p style="font-size: 16px;">Vulnerability management is a tough job. Very few people - even those in security - understand it that well and 
 there are a ton of poor practices in the water supply (e.g. using CVSS to drive prioritization). 
 Communicating with internal (business leaders) and external (customers) stakeholders is also a huge pain, especially when 
 they see a report saying there are 863 "high and critical" vulnerabilities in your system.</p>
 
-<p>The key to dealing with this, in my opinion, is using a risk-based approach. Just fixing everything, while it 
+<p style="font-size: 16px;">The key to dealing with this, in my opinion, is using a risk-based approach. Just fixing everything, while it 
 would be nice to do so, probably isn't a feasible solution for most organizations.</p>
 
-<p>So we are left with a highly imperfect approach to an unenviable situation: identifying the highest risk vulnerabilities 
+<p style="font-size: 16px;">So we are left with a highly imperfect approach to an unenviable situation: identifying the highest risk vulnerabilities 
 that are the least disruptive to fix and pressing ahead.</p>
 
-<p>This could easily be a book-length treatise on vulnerability management, but I know you don't have time for one. 
+<p style="font-size: 16px;">This could easily be a book-length treatise on vulnerability management, but I know you don't have time for one. 
 I have linked out to lots of useful resources throughout and would encourage you to check them out when able.</p>
 
-<p>Additionally, and because you made it to this point, please remember to grab your discount on the StackAware Vulnerability Management SOP using discount code VULNMGMT.</p>
+<p style="font-size: 16px;">Additionally, and because you made it to this point, please remember to grab your discount on the StackAware Vulnerability Management SOP using discount code VULNMGMT.</p>
 
 <h2><a href="https://sop.vulnerability.management/l/buy">Grab it now</a></h2>
   
-<p>As someone who has built these programs at multiple organizations, I wish I had something like this when I first started.</p>
+<p style="font-size: 16px;">As someone who has built these programs at multiple organizations, I wish I had something like this when I first started.</p>
 
-<p>And if you need help implementing any of the principles in this course, then please <a href="https://stackaware.com/contact-form/">reach out</a> to me via StackAware for a services engagement.</p>
+<p style="font-size: 16px;">And if you need help implementing any of the principles in this course, then please <a href="https://stackaware.com/contact-form/">reach out</a> to me via StackAware for a services engagement.</p>
 
-<p>Until then, best of luck and happy hunting!</p>
+<p style="font-size: 16px;">Until then, best of luck and happy hunting!</p>
   
-<p>P.S. As an alumnus of this course, you can view all of the content in this GitHub <a href="https://github.com/vuln-exchange/stackaware/tree/main/docs/5_day_course">repo</a>. Please feel free to submit PRs, comments, or questions. If you are sharing the course with someone else, though, please send them to <a href="https://vulnerability.management">vulnerability.management</a> so they can get the full experience!</p>
+<p style="font-size: 16px;">P.S. As an alumnus of this course, you can view all of the content in this GitHub <a href="https://github.com/vuln-exchange/stackaware/tree/main/docs/5_day_course">repo</a>. Please feel free to submit PRs, comments, or questions. If you are sharing the course with someone else, though, please send them to <a href="https://vulnerability.management">vulnerability.management</a> so they can get the full experience!</p>
 
 </body>
 </html>
