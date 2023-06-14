@@ -3,42 +3,42 @@
   
 <body>
 
-<p>Welcome to StackAware's vulnerability management course!</p>
+<p style="font-size: 16px;">Welcome to StackAware's vulnerability management course!</p>
 
-<p>Over the next few days, we'll dive deep into one of the major security problems
+<p style="font-size: 16px;">Over the next few days, we'll dive deep into one of the major security problems
 facing organizations today: dealing with known vulnerability overload.</p>
 
-<p>In this lesson, we're going to take a look at the problem, and hopefully, show
+<p style="font-size: 16px;">In this lesson, we're going to take a look at the problem, and hopefully, show
 that you aren't alone in your struggles.</p>
 
 <h1>First, a definition</h1>
 
-<p> By known vulnerabilities, I mean those which a network defenders could reasonably
+<p style="font-size: 16px;"> By known vulnerabilities, I mean those which a network defenders could reasonably
 be expected to know about through some sort of scanning tool or manual
 analysis. Check out this <a href="https://www.blog.deploy-securely.com/p/3rd-and-greater-party-code-risk-managing">post</a> for details, but know that this excludes &quot;zero days&quot; (at least prior
 to their public announcement) and other situations where an attacker is theonly one who knows about the flaw prior to exploitation.</p>
 
-<p>You'll need to use other techniques (like penetration testing) to find unknown
+<p style="font-size: 16px;">You'll need to use other techniques (like penetration testing) to find unknown
 vulnerabilities, and they are certainly important as well. But this course
 focuses on the known type.</p>
 
 <h1>There is a massive quantity of known vulnerabilities in most networks</h1>
 
-<p>A 2022 <a href="https://resilientcyber.substack.com/p/youre-vulnerable-and-malicious-actors">report</a> from Rezilion and the Ponemon Institute surveyed over 600 IT/Security professionals and 66% said they have a backlog of more than <i>100,000</i> open vulnerabilities. And over 50% of security leaders admitted they were able to patch <i>less than 50%</i> of their backlogged vulnerabilities. I know of networks with millions.</p>
+<p style="font-size: 16px;">A 2022 <a href="https://resilientcyber.substack.com/p/youre-vulnerable-and-malicious-actors">report</a> from Rezilion and the Ponemon Institute surveyed over 600 IT/Security professionals and 66% said they have a backlog of more than <i>100,000</i> open vulnerabilities. And over 50% of security leaders admitted they were able to patch <i>less than 50%</i> of their backlogged vulnerabilities. I know of networks with millions.</p>
 
-<p> Dozens of new CVEs (just one type of known vulnerability) are <a
+<p style="font-size: 16px;"> Dozens of new CVEs (just one type of known vulnerability) are <a
 href="https://nvd.nist.gov/general/nvd-dashboard">reported</a> every day in the National
 Vulnerability Database (NVD). And there is a huge chunk of known issues that
 don't even <a href="https://flashpoint.io/blog/cve-nvd-failed-to-report-and-detail-27-3-of-vulnerabilities-in-2022-h1/">get reported</a> there.</p>
 
 <h1>Exploitability of known vulnerabilities is difficult to gauge</h1>
 
-<p> Many, if not most of the entries in the NVD are &quot;<a
+<p style="font-size: 16px;"> Many, if not most of the entries in the NVD are &quot;<a
 href="https://www.blog.deploy-securely.com/p/confronting-mark-curpheys-critiques">science projects</a>&quot; that were exploited under very narrow circumstances by researchers. As a result, multiple studies suggest that <a
 href="https://www.blog.deploy-securely.com/p/but-is-it-exploitable">90%</a>
 or more of CVEs are <i>not</i> exploitable in a given configuration.</p>
 
-<p>While most application security <a
+<p style="font-size: 16px;">While most application security <a
 href="https://www.blog.deploy-securely.com/p/application-security-tools">tools</a>
 generally can't determine exploitability, they <i>will</i> generally flag
 libraries and components that have known vulnerabilities in them. This makes
@@ -48,15 +48,15 @@ present very low risk.</p>
 
 <h1>The Common Vulnerability Scoring System (CVSS) is a broken industry standard</h1>
 
-<p>In addition to the fact that most vulnerability scanner findings aren't
+<p style="font-size: 16px;">In addition to the fact that most vulnerability scanner findings aren't
 exploitable is the unfortunate reality that the way they are scored - generally
 with the CVSS - does <a href="https://www.blog.deploy-securely.com/p/cvss-an-inappropriate-industry-standard">not</a> make sense.</p>
 
-<p>Many organizations use a strategy of prioritizing &quot;high&quot; and
+<p style="font-size: 16px;">Many organizations use a strategy of prioritizing &quot;high&quot; and
 &quot;critical&quot; findings (meaning they have a CVSS score of 7.0+) for
 remediation and leaving other issues for later (or never fixing them at all).</p>
 
-<p>Despite
+<p style="font-size: 16px;">Despite
 <a
 href="https://www.balbix.com/blog/5-reasons-to-stop-using-cvss-scores-to-measure-risk/">many</a><a
 href="https://www.tenable.com/blog/why-you-need-to-stop-using-cvss-for-vulnerability-prioritization"> organizations</a>, including the one that <a href="https://www.first.org/epss/model">created</a>
@@ -64,7 +64,7 @@ the CVSS and the <a href="https://www.blog.deploy-securely.com/p/revealing-the-g
 
 <h1>Enterprises are overwhelmed</h1>
 
-<p>Prior to being breached in 2017 via <a
+<p style="font-size: 16px;">Prior to being breached in 2017 via <a
 href="https://www.synopsys.com/blogs/software-security/equifax-apache-struts-vulnerability-cve-2017-5638/">CVE-2017-5638</a>, for which it was fined <a
 href="https://www.ftc.gov/news-events/news/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related-2017-data-breach">$575 million</a>,
 the credit monitoring company Equifax was using manual, <a
@@ -73,12 +73,12 @@ processes to prioritize vulnerabilities for remediation. It also had a backlog
 of over 1000 known vulnerabilities on <a href="https://www.hsgac.senate.gov/imo/media/doc/FINAL%20Equifax%20Report.pdf">internet-facing</a> systems <i>alone</i>. At the time of the breach, Equifax's market capitalization was over <a
 href="https://companiesmarketcap.com/equifax/marketcap/">$17 billion</a>.</p>
 
-<p>Let that sink in: a deca-billion dollar company safeguarding incredibly sensitive data was struggling to manage its vulnerabilities so much it was eventually breached by one known to be exploitable...<a
+<p style="font-size: 16px;">Let that sink in: a deca-billion dollar company safeguarding incredibly sensitive data was struggling to manage its vulnerabilities so much it was eventually breached by one known to be exploitable...<a
 href="https://arstechnica.com/information-technology/2017/09/massive-equifax-breach-caused-by-failure-to-patch-two-month-old-bug/">two months</a> after being publicly announced!</p>
 
-<p>But the thing is, this isn't rare at all.</p>
+<p style="font-size: 16px;">But the thing is, this isn't rare at all.</p>
 
-<p>According to one research study, most organizations appear to have a &quot;<a
+<p style="font-size: 16px;">According to one research study, most organizations appear to have a &quot;<a
 href="https://learn-cloudsecurity.cisco.com/vulnerability-management-resources/vmc/prioritization-to-prediction-volume-3">natural limit</a>&quot; of being able to remediate only 10% of the total vulnerabilities in their network each month. So almost no organization, irrespective of size, will be able to just &quot;fix everything.&quot;</p>
 <a href="https://media.licdn.com/dms/image/D4E22AQFenxKEraDjaw/feedshare-shrink_800/0/1685994110504?e=1689206400&v=beta&t=_d1IAWga7q3OEZaxXrlTd2iVuj2gT37142m-xUOYvUU">
   <img src="https://media.licdn.com/dms/image/D4E22AQFenxKEraDjaw/feedshare-shrink_800/0/1685994110504?e=1689206400&v=beta&t=_d1IAWga7q3OEZaxXrlTd2iVuj2gT37142m-xUOYvUU" alt="Vulnerability Management Natural Limit" style="width:100%;">
@@ -86,15 +86,15 @@ href="https://learn-cloudsecurity.cisco.com/vulnerability-management-resources/v
   
 <h1>How do I deal with this problem?</h1>
 
-<p>As you can see, basically everyone is dealing with vulnerability overload. And
+<p style="font-size: 16px;">As you can see, basically everyone is dealing with vulnerability overload. And
 considering that attackers begin <a
 href="https://www.mandiant.com/resources/blog/time-between-disclosure-patch-release-and-vulnerability-exploitation">exploiting</a> known vulnerabilities almost immediately upon publication, this means that <i>prioritizing</i> effectively is the single most important task in vulnerability management.</p>
 
-<p>We'll look at how to do this beginning with Day 2's lesson.</p>
+<p style="font-size: 16px;">We'll look at how to do this beginning with Day 2's lesson.</p>
 
-<p>See you tomorrow!</p>
+<p style="font-size: 16px;">See you tomorrow!</p>
 
-<p>
+<p style="font-size: 16px;">
 P.S. Hit reply to let me know why you are taking this course or if you have any feedback!</p>
 </body>
 </html>
