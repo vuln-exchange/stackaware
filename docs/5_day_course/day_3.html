@@ -3,7 +3,7 @@
 <body>
 <p style="font-size: 16px;">Great progress so far!</p>
 
-<p style="font-size: 16px;">If you have made it here, I am pretty confident that you are now ahead of 90% of cybersecurity pros when it comes to vulnerability management.</p>
+<p style="font-size: 16px;">If you have made it here, you are now ahead of 90% of cybersecurity pros when it comes to vulnerability management.</p>
 
 <p style="font-size: 16px;">And you'll soon be impressing your business counterparts by providing very clear estimates regarding cyber risk.</p>
  
@@ -23,10 +23,10 @@
 
 <p style="font-size: 16px;">Now that you have SLE, you multiply it by ARO to get your ALE.</p>
 
-<p style="font-size: 16px;">How do you get the ARO, you might ask? Well, first you need to determine the likelihood of a given vulnerability being exploited in the next 365 days. This can be tough, but there are free tools you can use. The best one I have seen is the Exploit Prediction Scoring System (<a href="https://www.blog.deploy-securely.com/p/deep-dive-into-the-epss">EPSS</a>). Based on a machine learning model, the EPSS provides a probability that any given CVE will be exploited in the next 30 days.</p>
+<p style="font-size: 16px;">How do you get the ARO, you might ask? Well, first you need to determine the likelihood of a given vulnerability being exploited in the next 365 days. This can be tough, but there are free tools you can use. The best one we have seen is the Exploit Prediction Scoring System (<a href="https://www.blog.deploy-securely.com/p/deep-dive-into-the-epss">EPSS</a>). Based on a machine learning model, the EPSS provides a probability that any given CVE will be exploited in the next 30 days.</p>
  
  <h2>The Exploit Prediction Scoring System</h2>
- <p style="font-size: 16px;"> You can check out this <a href="https://stackaware.com/blog/exploit-prediction-scoring-system-epss-uses-and-misconceptions">article</a> for more details, but I think the below two images summarize the value of the EPSS quite effectively</p>
+ <p style="font-size: 16px;"> You can check out this <a href="https://stackaware.com/blog/exploit-prediction-scoring-system-epss-uses-and-misconceptions">article</a> for more details, but the below two images summarize the value of the EPSS quite effectively</p>
  <br>
   <a href="https://images.squarespace-cdn.com/content/v1/61182d63aeccc95714de714d/fd2a826a-c374-4205-91ff-a685f29c952a/CVSS_effort_level.png?format=500w">
   <img src="https://images.squarespace-cdn.com/content/v1/61182d63aeccc95714de714d/fd2a826a-c374-4205-91ff-a685f29c952a/CVSS_effort_level.png?format=500w" alt="CVSS coverage requirement" style="width:100%;">
@@ -50,7 +50,7 @@
  
 <p style="font-size: 16px;">Using some math (that is publicly <a href="https://github.com/Deploying-Securely/DSRAM">available</a>), you can convert this to a 365 day score with the Deploy Securely Risk Assessment Model (DSRAM - more to follow below).</p>
 
-<p style="font-size: 16px;">There are a lot of limitations with this approach, namely that not all cyber incidents are created equal. Thus, your calculations are likely to be quite rough. With that said, I am <i>very</i> confident this is a far superior approach to using CVSS or similar qualitative methods.</p>
+<p style="font-size: 16px;">There are a lot of limitations with this approach, namely that not all cyber incidents are created equal. Thus, your calculations are likely to be quite rough. With that said, this is a <i>far</i> superior approach to using CVSS or similar qualitative methods.</p>
 
 <h1>Method 2 - evaluate vulnerabilities by asset and CIA attributes</h1>
 
@@ -68,7 +68,7 @@
 
 <p style="font-size: 16px;">I won't get into how to do a BIA here because that's a whole separate course, but even just estimates can be helpful.</p>
 
-<p style="font-size: 16px;">Once you have this information, the good news is that the DSRAM the resulting calculations for you. Check these guides out for how to calculate risk for <a href="https://www.blog.deploy-securely.com/p/the-deploying-securely-risk-assessment?s=w">CVEs</a> and <a href="https://www.blog.deploy-securely.com/p/the-deploying-securely-risk-assessment-ded">non-CVEs</a>. Or just go straight to this free <a href="https://colab.research.google.com/drive/1q-04x9zgO9Nh5ap1XmkMJfwm-ahaqkce?usp=sharing">calculator</a> I built.</p>
+<p style="font-size: 16px;">Once you have this information, the good news is that the DSRAM the resulting calculations for you. Check these guides out for how to calculate risk for <a href="https://www.blog.deploy-securely.com/p/the-deploying-securely-risk-assessment?s=w">CVEs</a> and <a href="https://www.blog.deploy-securely.com/p/the-deploying-securely-risk-assessment-ded">non-CVEs</a>. Or just go straight to this free <a href="https://colab.research.google.com/drive/1q-04x9zgO9Nh5ap1XmkMJfwm-ahaqkce?usp=sharing">calculator</a>.</p>
 
 <p style="font-size: 16px;">By plugging in information regarding the CIA attributes of your asset and the vulnerabilities impacting it, you can get a quick idea of the financial risk.</p>
 
@@ -82,7 +82,7 @@
 
 <h1>Method 3 - evaluate each vulnerability by CIA impact and cumulative risk against an asset</h1>
 
-<p style="font-size: 16px;">I'm not going to get into this method for this email course because frankly, it's too advanced. Although from a mathematical perspective it's the most accurate, it is very difficult to do without the proper tooling.</p>
+<p style="font-size: 16px;">We won't get into this method for this email course because frankly, it's too advanced. Although from a mathematical perspective it's the most accurate, it is very difficult to do without the proper tooling.</p>
 
 <p style="font-size: 16px;">Essentially, this approach takes into account CIA impacts at the individual vulnerability level and treats the cumulative probability of a cyber incident happening as the product of the likelihood of multiple independent events occurring (exploitations of each vulnerability).</p>
 
@@ -90,9 +90,9 @@
 
  <h1>Bringing it home</h1>
 
-<p style="font-size: 16px;">Alright - awesome job! You've made it through a bunch of formulas and are still with me.</p>
+<p style="font-size: 16px;">Alright - awesome job! You've made it through a bunch of formulas and are still with us.</p>
 
-<p style="font-size: 16px;">Whichever approach you use, I would make sure to be clear about documenting your assumptions and explaining the potential limitations.</p>
+<p style="font-size: 16px;">Whichever approach you use, make sure to be clear about documenting your assumptions and explaining the potential limitations.</p>
 
 <p style="font-size: 16px;">Since organizations have vastly different levels of sophistication, it is certainly appropriate for them to use different methods of evaluating the risk posed by security vulnerabilities.</p>
 
