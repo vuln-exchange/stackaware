@@ -14,18 +14,18 @@
 <h2>Risk appetite</h2>
 
 <p style="font-size: 16px;">This is the organization's baseline tolerance for cybersecurity risk, and should be annotated in terms of
-dollars per year. Many VMPs I have seen don't explicitly state a risk tolerance but rather make it implicit 
+dollars per year. Many VMPs don't explicitly state a risk tolerance but rather make it implicit 
 by allowing certain types of issues (e.g. CVSS &lt; 4.0) to not be remediated.</p>
 
 <p style="font-size: 16px;">You should make clear what your risk tolerance is, though. Otherwise there is no way to be consistent and logical about what the right tradeoffs are to make (which is the whole point of this exercise, right!?).</p>
 
-<p style="font-size: 16px;">Furthermore, if you are really sophisticated, my recommendation would be that you establish a cumulative risk tolerance for <i>all</i> vulnerabilities, rather than treating each one individually. Check out this <a href="https://www.blog.deploy-securely.com/p/managing-your-risk-surface">post</a> for a detailed discussion, but know that such a total "risk surface" calculation is an advanced technique.</p>
+<p style="font-size: 16px;">Furthermore, if you are really sophisticated, you can establish a cumulative risk tolerance for <i>all</i> vulnerabilities, rather than treating each one individually. Check out this <a href="https://www.blog.deploy-securely.com/p/managing-your-risk-surface">post</a> for a detailed discussion, but know that such a total "risk surface" calculation is an advanced technique.</p>
 
-<p style="font-size: 16px;">Below I'll give an example of a simpler, vulnerability-by-vulnerability approach to defining risk appetite.</p>
+<p style="font-size: 16px;">Below we'll give an example of a simpler, vulnerability-by-vulnerability approach to defining risk appetite.</p>
 
 <h2>Risk tolerance</h2>
 
-<p style="font-size: 16px;">This represents the organization's desired velocity for returning to the risk appetite once exceeding it. Again, optimally this would be calculated cumulatively across the organization, but doing so might be too much for your current maturity level. So in that case, I would give the below as an example timetable identifying the organization's risk appetite and tolerance:</p>
+<p style="font-size: 16px;">This represents the organization's desired velocity for returning to the risk appetite once exceeding it. Again, optimally this would be calculated cumulatively across the organization, but doing so might be too much for your current maturity level. The below is an example timetable identifying the organization's risk appetite and tolerance with that approach:</p>
 
 <p style="font-size: 16px;"><i>The product-line general manager shall ensure remediation of vulnerabilities within the following timelines:</i></p>
 
@@ -33,7 +33,7 @@ by allowing certain types of issues (e.g. CVSS &lt; 4.0) to not be remediated.</
  <li style="font-size: 16px;"><i>&lt; $10,000 ALE | 90 days</i></li>
  <li style="font-size: 16px;"><i>$10,000-$49,999 ALE | 60 days</i></li>
  <li style="font-size: 16px;"><i>$50,000-$99,999 ALE | 30 days</i></li>
- <li style="font-size: 16px;"><i>$100,000+ ALE | 15 days</i></li>
+ <li style="font-size: 16px;"><i>$100,000-$999,999 ALE | 15 days</i></li>
  <li style="font-size: 16px;"><i>$1,000,000+ ALE | 1 day</i></li>
 </ul>
 
@@ -77,27 +77,27 @@ These two roles may be the same person. This is generally a:</p>
 
 <p style="font-size: 16px;"><b>Don't include security release criteria in your vulnerability management policy.</b> The former type of policy handles an entirely different type of risk and you should tailor it narrowly to the appropriate circumstances. Check out this <a href="https://www.blog.deploy-securely.com/p/security-release-criteria">post</a> for more information, but suffice to day, DO NOT include something like “No software should be deployed to production with unresolved high or medium findings" in your VMP.</p>
 
-<p style="font-size: 16px;">I would also highly recommend you check out this <a href="https://www.blog.deploy-securely.com/p/vulnerability-management-policies">post</a> on the top 10 recommendations for structuring your program if you have time. It gets more in the weeds about implementation details and is a great companion resource to this course.</p>
+<p style="font-size: 16px;">You can also check out this <a href="https://www.blog.deploy-securely.com/p/vulnerability-management-policies">post</a> on the top 10 recommendations for structuring your program if you have time. It gets more in the weeds about implementation details and is a great companion resource to this course.</p>
 
 <h1>Moving forward</h1>
 
 <p style="font-size: 16px;">So what does a good policy look like?</p>
 
-<p style="font-size: 16px;">I'm happy you asked.</p>
+<p style="font-size: 16px;">We're happy you asked.</p>
 
 <p style="font-size: 16px;">StackAware has a <a href="https://docs.google.com/document/d/194oI79wIpXFfOEhVye8OW4wmHQxYHSO9/edit?usp=sharing&amp;ouid=110873095006072629293&amp;rtpof=true&amp;sd=true">template</a> that you can copy directly from Google Drive.</p>
 
 <p style="font-size: 16px;">It's appropriate for a more mature organization and might be too much for your team if you are just getting started. With that said, feel free to use it as a starting point.</p>
 
-<p style="font-size: 16px;">If you are getting to this point and thinking to yourself "how does this all work in practice?" then I have an answer for you.</p>
+<p style="font-size: 16px;">If you are getting to this point and thinking to yourself "how does this all work in practice?" then we have an answer for you.</p>
 
-<p style="font-size: 16px;">Because you have gone through my course and are set up for vulnerability management success, I want to give you a discount off the StackAware Vulnerability Management SOP.</p>
+<p style="font-size: 16px;">Because you have gone through my course and are set up for vulnerability management success, we want to give you a discount off the StackAware Vulnerability Management SOP.</p>
 
 <p style="font-size: 16px;">An action-driven playbook that you can start using immediately, it will save you hours of time and confusion when setting up your program.</p>
 
 <p style="font-size: 16px;">Check out the details <a href="https://sop.vulnerability.management/l/buy">here</a> and use code VULNMGMT.</p>
 
-<p style="font-size: 16px;">In any case, I'll see you tomorrow for the final day of the course!</p>
+<p style="font-size: 16px;">In any case, we'll see you tomorrow for the final day of the course!</p>
 
 </body>
 </html>
