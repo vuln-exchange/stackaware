@@ -1,3 +1,12 @@
 {
-   "signedContributors": []
+  "signedContributors": [
+    {
+      "name": "vuln-exchange",
+      "id": 88288796,
+      "comment_id": 1597898898,
+      "created_at": "2023-06-20T00:12:28Z",
+      "repoId": 645839845,
+      "pullRequestNo": 4
+    }
+  ]
 }
