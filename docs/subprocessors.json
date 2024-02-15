@@ -134,6 +134,41 @@
         },
         {
             "type": "service",
+            "name": "Google Analytics",
+            "provider": {
+                "name": "Google, LLC",
+                "url": [
+                    "https://policies.google.com/privacy"
+                ]
+            },
+            "description": "Business productivity suite",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Personal Data"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "USA"
+                }
+            ]
+        },
+        {
+            "type": "service",
             "name": "YouTube",
             "provider": {
                 "name": "Google, LLC",
