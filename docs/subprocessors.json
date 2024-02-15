@@ -134,6 +134,134 @@
         },
         {
             "type": "service",
+            "name": "YouTube",
+            "provider": {
+                "name": "Google, LLC",
+                "url": [
+                    "https://policies.google.com/privacy"
+                ]
+            },
+            "description": "Video hosting",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "USA"
+                }
+            ]
+        },
+        {
+            "type": "service",
+            "name": "Spotify",
+            "provider": {
+                "name": "Spotify USA Inc.",
+                "url": [
+                    "https://www.spotify.com/us/legal/privacy-policy/",
+                    "https://www.spotify.com/us/safetyandprivacy/personal-data-collected"
+                ]
+            },
+            "description": "Podcast hosting",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "Because of the global nature of our business, Spotify transfers personal data internationally with Spotify group companies, subcontractors and partners when carrying out the activities described in this Policy."
+                }
+            ]
+        },
+        {
+            "type": "service",
+            "name": "Apple Podcasts",
+            "provider": {
+                "name": "Apple Inc.",
+                "url": [
+                    "https://www.apple.com/legal/privacy/data/en/apple-podcasts/",
+                    "https://www.apple.com/legal/privacy/en-ww/"
+                ]
+            },
+            "description": "Podcast hosting",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "Apple products and offerings connect you to the world. To make that possible, your personal data may be transferred to or accessed by entities around the world, including Apple-affiliated companies, to perform processing activities such as those described in this Privacy Policy in connection with your use of our products and services."
+                }
+            ]
+        },
+        {
+            "type": "service",
+            "name": "Buzzsprout",
+            "provider": {
+                "name": "Higher Pixels, dba Buzzsprout",
+                "url": [
+                    "https://www.buzzsprout.com/privacy",
+                    "https://www.buzzsprout.com/privacy_shield",
+                    "https://www.buzzsprout.com/gdpr"
+                ]
+            },
+            "description": "Podcast processing",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "United States."
+                }
+            ]
+        },
+        {
+            "type": "service",
             "name": "Google Cloud",
             "provider": {
                 "name": "Google, LLC",
