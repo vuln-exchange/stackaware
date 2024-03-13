@@ -200,6 +200,85 @@
         },
         {
             "type": "service",
+            "name": "Canva",
+            "provider": {
+                "name": "Canva Pty Ltd",
+                "url": [
+                    "https://www.canva.com/trust/privacy/",
+                    "https://www.canva.com/policies/privacy-policy/"
+                ]
+            },
+            "description": "Design",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                },
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#generative-ai-training-public-data",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "Your information collected through the Service will be stored and processed in the United States, Australia, Singapore, European Union, United Kingdom, Philippines and New Zealand and any other country in which Canva or its subsidiaries, affiliates or service providers maintain facilities or employ staff or contractors."
+                }
+            ]
+        },
+        {
+            "type": "service",
+            "name": "Quickbooks Online",
+            "provider": {
+                "name": "Intuit, Inc.",
+                "url": [
+                    "https://quickbooks.intuit.com/hk/privacy/"
+                ]
+            },
+            "description": "Accounting software",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Internal"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-External"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "In accordance with and as permitted by applicable law and regulations, we reserve the right to transfer your information, process and store it outside your country of residence to wherever we or our third party service providers operate."
+                }
+            ]
+        },
+        {
+            "type": "service",
             "name": "Spotify",
             "provider": {
                 "name": "Spotify USA Inc.",
