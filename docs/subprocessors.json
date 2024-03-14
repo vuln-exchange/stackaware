@@ -279,6 +279,41 @@
         },
         {
             "type": "service",
+            "name": "TaxAct",
+            "provider": {
+                "name": "TaxAct Holdings, Inc.",
+                "url": [
+                    "https://www.taxact.com/privacy-notice"
+                ]
+            },
+            "description": "Tax preparation software",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Internal"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "The Services are intended for access and use in the United States. Any information TaxAct collects about you may be stored, transferred, processed, and/or accessed by us in the United States, or to the extent permitted by law, any other country where we or our vendors operate. Please know that personal information may be transferred to, and maintained on, computers not in the state or country where you live, meaning the privacy laws could differ from and may not be as protective as those where you live. If you are located outside the United States and allow us to collect personal information about you, please be aware that TaxAct may, where permitted by law, transfer your personal information to other countries, including the United States, and process and store it there. By allowing collection of your personal information, you consent to having your personal data transferred to, processed, and stored in the United States."
+                }
+            ]
+        },
+        {
+            "type": "service",
             "name": "Spotify",
             "provider": {
                 "name": "Spotify USA Inc.",
