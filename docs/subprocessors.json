@@ -13,6 +13,40 @@
     "services": [
         {
             "type": "service",
+            "name": "1Password",
+            "provider": {
+                "name": "AgileBits Inc.",
+                "url": [
+                    "https://1password.com/legal/privacy/"
+                ]
+            },
+            "description": "Password manager",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Personal Data"
+                }
+,
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Internal"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "USA, Canda"
+                }
+            ]
+        },
+{
+            "type": "service",
             "name": "Microsoft 365",
             "provider": {
                 "name": "Microsoft, Inc.",
@@ -43,6 +77,103 @@
                 {
                     "name": "serviceLocation",
                     "value": "USA"
+                }
+            ]
+        },
+{
+            "type": "service",
+            "name": "Carrd",
+            "provider": {
+                "name": "Carrd, Inc.",
+                "url": [
+                    "https://carrd.co/docs/general/privacy"
+                ]
+            },
+            "description": "Webpage hosting",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Personal Data"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "The Service is operated from the United States and your Personal Information is processed by us in the United States. If you are located in another jurisdiction, it is important to note that the privacy laws in the United States may not be as comprehensive as those in other countries. Where we share Personal Information with service providers and other third parties in the United States and other countries, we use safeguards to protect your Personal Information consistent with this Privacy Policy and applicable laws."
+                }
+            ]
+        },
+{
+            "type": "service",
+            "name": "CloudConvert",
+            "provider": {
+                "name": "Lunaweb GmbH",
+                "url": [
+                    "https://carrd.co/docs/general/privacy"
+                ]
+            },
+            "description": "Format conversion tool",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "The location of the servers is geographically in Germany. If you are using our service from the US, we are using servers geographically in the US. We select the geographically nearest servers based on your IP address location."
+                }
+            ]
+        },
+{
+            "type": "service",
+            "name": "Draw.io",
+            "provider": {
+                "name": "JGraph Limited",
+                "url": [
+                    "https://github.com/jgraph/security-privacy-legal/blob/dev/Privacy/jgraph-privacy-policy.md"
+                ]
+            },
+            "description": "Graphing and diagramming tool",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "We do not store or transmit your personal data outside of UK. Bear in mind that controllers which use our services (where we are their processor), may choose to do so."
                 }
             ]
         },
@@ -123,8 +254,10 @@
                 {
                     "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
                     "type": "formulation"
-                }
-            ],
+                },
+            {
+"urI":"urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-restricted-data", "type":"forumation"}
+],
             "properties": [
                 {
                     "name": "serviceLocation",
@@ -924,7 +1057,7 @@
         },
         {
             "type": "service",
-            "name": "ChatGPT with Chat History Disabled",
+            "name": "ChatGPT with chat history disabled",
             "description": "Artificial Intelligence user interface",
             "provider": {
                 "name": "OpenAI, L.L.C.",
@@ -998,6 +1131,41 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Confidential-External"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                },
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#generative-ai-training-public-data",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "United States and may be disclosed to our service providers and affiliates in other jurisdictions."
+                }
+            ]
+        },
+{
+            "type": "service",
+            "name": "Whisper application programming interface",
+            "description": "Voice-to-text artificial intelligence service",
+            "provider": {
+                "name": "OpenAI, L.L.C.",
+                "url": [
+                    "https://openai.com/policies/privacy-policy"
+                ]
+            },
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
                 }
             ],
             "externalReferences": [
@@ -1528,6 +1696,21 @@
                     "uid": "Not applicable.",
                     "name": "Generative AI training with Public Data.",
                     "description": "Many large technology companies train generative AI models using publicly availabile data such as on internet-facing websites or social media posts.",
+                    "resourceReferences": [
+                        {
+                            "externalReference": {
+                                "urI": "https://blog.stackaware.com/p/intellectual-property-artificial-intelligence",
+                                "comment": "This article describes a framework for evaluating AI training practices from a security and intellectual property protection perspective.",
+                                "type": "website"
+                            }
+                        }
+                    ],
+                    "taskTypes": "other"
+                }, {
+                    "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-restricted-data",
+                    "uid": "Not applicable.",
+                    "name": "Predictive AI training with Restricted Data.",
+                    "description": "Especially in the case of spam filtering and fraud detection, some providers do train predictive AI models using non-public information.",
                     "resourceReferences": [
                         {
                             "externalReference": {
