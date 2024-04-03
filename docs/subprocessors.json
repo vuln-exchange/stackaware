@@ -13,6 +13,31 @@
     "services": [
         {
             "type": "service",
+            "name": "SafeBase",
+            "provider": {
+                "name": "SafeBase Inc.",
+                "url": [
+                    "https://safebase.io/privacy"
+                ]
+            },
+            "description": "Trust platform",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "Not specified"
+                }
+            ]
+        },
+        {
+            "type": "service",
             "name": "1Password",
             "provider": {
                 "name": "AgileBits Inc.",
@@ -41,7 +66,7 @@
             "properties": [
                 {
                     "name": "serviceLocation",
-                    "value": "USA, Canda"
+                    "value": "USA, Canada"
                 }
             ]
         },
