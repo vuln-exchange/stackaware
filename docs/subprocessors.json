@@ -1212,42 +1212,6 @@
         },
         {
             "type": "service",
-            "name": "Claude",
-            "provider": {
-                "name": "Anthropic PBC",
-                "url": [
-                    "https://console.anthropic.com/legal/privacy",
-                    "https://support.anthropic.com/en/articles/7996866-how-long-do-you-store-personal-data"
-                ]
-            },
-            "description": "Artificial Intelligence user interface",
-            "authenticated": true,
-            "x-trust-boundary": true,
-            "data": [
-                {
-                    "flow": "bi-directional",
-                    "classification": "Public"
-                }
-            ],
-            "externalReferences": [
-                {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
-                    "type": "formulation"
-                },
-                {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#generative-ai-training-public-data",
-                    "type": "formulation"
-                }
-            ],
-            "properties": [
-                {
-                    "name": "serviceLocation",
-                    "value": "US, or to other countries outside the EEA and the UK"
-                }
-            ]
-        },
-        {
-            "type": "service",
             "name": "Pipedrive",
             "provider": {
                 "name": "Pipedrive, Inc.",
