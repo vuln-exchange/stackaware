@@ -38,6 +38,60 @@
         },
         {
             "type": "service",
+            "name": "Workona",
+            "provider": {
+                "name": "Workona Inc.",
+                "url": [
+                    "https://workona.com/policies/privacy/"
+                ]
+            },
+            "description": "Tab manager",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "We are based in the United States and, unless we expressly agree otherwise, we may host, transfer, and process data, including personal information, in the United States and in other countries through Workona affiliates and third parties that we use to operate and manage the Services. These countries may have data protection laws that are different from those of your country of residence. Workona uses a variety of safeguards, including contractual and technical measures, to protect the data we transfer."
+                }
+            ]
+        },
+        {
+            "type": "service",
+            "name": "Postman",
+            "provider": {
+                "name": "Postman, Inc.",
+                "url": [
+                    "https://www.postman.com/legal/privacy-policy/"
+                ]
+            },
+            "description": "API testing tool",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Internal"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "Postman's primary hosting facilities are in the United States. Whenever we transfer your information, we take steps to protect it.."
+                }
+            ]
+        },
+        {
+            "type": "service",
             "name": "1Password",
             "provider": {
                 "name": "AgileBits Inc.",
@@ -56,8 +110,7 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Personal Data"
-                }
-,
+                },
                 {
                     "flow": "bi-directional",
                     "classification": "Confidential-Internal"
@@ -70,7 +123,7 @@
                 }
             ]
         },
-{
+        {
             "type": "service",
             "name": "Microsoft 365",
             "provider": {
@@ -105,7 +158,7 @@
                 }
             ]
         },
-{
+        {
             "type": "service",
             "name": "Carrd",
             "provider": {
@@ -140,7 +193,7 @@
                 }
             ]
         },
-{
+        {
             "type": "service",
             "name": "CloudConvert",
             "provider": {
@@ -171,7 +224,7 @@
                 }
             ]
         },
-{
+        {
             "type": "service",
             "name": "Draw.io",
             "provider": {
@@ -280,9 +333,11 @@
                     "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
                     "type": "formulation"
                 },
-            {
-"urI":"urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-restricted-data", "type":"forumation"}
-],
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-restricted-data",
+                    "type": "forumation"
+                }
+            ],
             "properties": [
                 {
                     "name": "serviceLocation",
@@ -1175,7 +1230,7 @@
                 }
             ]
         },
-{
+        {
             "type": "service",
             "name": "Whisper application programming interface",
             "description": "Voice-to-text artificial intelligence service",
@@ -1695,7 +1750,8 @@
                         }
                     ],
                     "taskTypes": "other"
-                }, {
+                },
+                {
                     "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-restricted-data",
                     "uid": "Not applicable.",
                     "name": "Predictive AI training with Restricted Data.",
