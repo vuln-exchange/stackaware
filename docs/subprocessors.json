@@ -1,3 +1,5 @@
+
+
 {
     "bomFormat": "CycloneDX",
     "specVersion": "1.5",
@@ -86,7 +88,7 @@
             "properties": [
                 {
                     "name": "serviceLocation",
-                    "value": "Postman's primary hosting facilities are in the United States. Whenever we transfer your information, we take steps to protect it.."
+                    "value": "Postman's primary hosting facilities are in the United States. Whenever we transfer your information, we take steps to protect it."
                 }
             ]
         },
@@ -109,7 +111,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -142,7 +148,19 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Internal"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-External"
                 }
             ],
             "externalReferences": [
@@ -158,6 +176,41 @@
                 }
             ]
         },
+{
+    "type": "service",
+    "name": "AuthoredUp",
+    "provider": {
+        "name": "TalentKit Limited",
+        "url": [
+            "https://authoredup.com/privacy"
+        ]
+    },
+    "description": "Writing assistant",
+    "authenticated": true,
+    "x-trust-boundary": true,
+    "data": [
+        {
+            "flow": "bi-directional",
+            "classification": "Public"
+        },
+        {
+            "flow": "bi-directional",
+            "classification": "Public-Personal Data"
+        }
+    ],
+    "externalReferences": [
+        {
+            "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+            "type": "formulation"
+        }
+    ],
+    "properties": [
+        {
+            "name": "serviceLocation",
+            "value": "TalentKit Limited may share your Personal Data with certain third-party service providers to facilitate the provision of our Services. This includes sharing data with TalentKit doo (Veljka Dugosevica 54, 11050 Belgrade, Serbia), our main provider of software, maintenance, and support, which holds an ISO27001 license. Such collaboration ensures the seamless delivery of our services to you. We take great care in selecting our partners and ensure that any transfer of your Personal Data complies with applicable laws and regulations. Some of our partners, including TalentKit doo, may be located in countries outside of the EU. We require that transfers of your Personal Data to such partners are subject to appropriate safeguards, including contractual arrangements approved by the European Commission, to ensure an adequate level of protection."
+        }
+    ]
+},
         {
             "type": "service",
             "name": "Carrd",
@@ -177,7 +230,7 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -209,6 +262,10 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -274,7 +331,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -300,6 +361,49 @@
         },
         {
             "type": "service",
+            "name": "Gusto",
+            "provider": {
+                "name": "ZenPayroll, Inc",
+                "url": [
+                    "https://gusto.com/legal/privacy"
+                ]
+            },
+            "description": "Payroll processing",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Internal"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "All information processed by us or our service providers may be transferred, processed, or stored anywhere in the world, including in countries that may have data protection laws that are different from the laws where you live. Your information may be accessible to the courts, law enforcement, and national security authorities of the United States."
+                }
+            ]
+        },
+        {
+            "type": "service",
             "name": "Google Workspace",
             "provider": {
                 "name": "Google, LLC",
@@ -317,7 +421,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -364,7 +472,7 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -380,6 +488,42 @@
                 }
             ]
         },
+{
+    "type": "service",
+    "name": "AuthoredUp",
+    "provider": {
+        "name": "TalentKit Limited",
+        "url": [
+            "https://authoredup.com/privacy"
+        ]
+    },
+    "description": "Writing assistant",
+    "authenticated": true,
+    "x-trust-boundary": true,
+    "data": [
+        {
+            "flow": "bi-directional",
+            "classification": "Public"
+        },
+        {
+            "flow": "bi-directional",
+            "classification": "Public-Personal Data"
+        }
+    ],
+    "externalReferences": [
+        {
+            "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+            "type": "formulation"
+        }
+    ],
+    "properties": [
+        {
+            "name": "serviceLocation",
+            "value": "TalentKit Limited may share your Personal Data with certain third-party service providers to facilitate the provision of our Services. This includes sharing data with TalentKit doo (Veljka Dugosevica 54, 11050 Belgrade, Serbia), our main provider of software, maintenance, and support, which holds an ISO27001 license. Such collaboration ensures the seamless delivery of our services to you. We take great care in selecting our partners and ensure that any transfer of your Personal Data complies with applicable laws and regulations. Some of our partners, including TalentKit doo, may be located in countries outside of the EU. We require that transfers of your Personal Data to such partners are subject to appropriate safeguards, including contractual arrangements approved by the European Commission, to ensure an adequate level of protection."
+        }
+    ]
+},
+
         {
             "type": "service",
             "name": "YouTube",
@@ -396,6 +540,10 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -466,7 +614,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -542,6 +694,10 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -574,6 +730,10 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -607,6 +767,10 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -641,7 +805,7 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -673,6 +837,10 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -711,7 +879,7 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -746,7 +914,7 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -781,7 +949,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -816,7 +988,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -904,7 +1080,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -947,7 +1127,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -990,7 +1174,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -1033,7 +1221,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -1076,7 +1268,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -1098,7 +1294,7 @@
         },
         {
             "type": "service",
-            "name": "ChatGPT",
+            "name": "ChatGPT Team",
             "provider": {
                 "name": "OpenAI, L.L.C.",
                 "url": [
@@ -1112,6 +1308,10 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -1137,7 +1337,7 @@
         },
         {
             "type": "service",
-            "name": "ChatGPT with chat history disabled",
+            "name": "ChatGPT Team-Temporary Chat Mode",
             "description": "Artificial Intelligence user interface",
             "provider": {
                 "name": "OpenAI, L.L.C.",
@@ -1154,7 +1354,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -1202,7 +1406,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -1246,6 +1454,10 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -1284,7 +1496,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -1330,7 +1546,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -1366,7 +1586,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -1396,7 +1620,7 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -1432,7 +1656,7 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -1468,7 +1692,7 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
                 }
             ],
             "properties": [
@@ -1504,7 +1728,7 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -1540,7 +1764,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -1580,7 +1808,11 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 },
                 {
                     "flow": "bi-directional",
@@ -1621,7 +1853,7 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -1662,7 +1894,7 @@
                 },
                 {
                     "flow": "bi-directional",
-                    "classification": "Personal Data"
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -1699,6 +1931,10 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
                 }
             ],
             "properties": [
