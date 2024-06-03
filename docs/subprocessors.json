@@ -1330,8 +1330,8 @@
                     "value": "United States and may be disclosed to our service providers and affiliates in other jurisdictions."
                 },
                 {
-                    "name": "corporateEntity",
-                    "value": "OpenAI, L.L.C."
+                    "name": "iso_42001_roles",
+                    "value": "operator, tester and evaluator, deployer, governance and oversight professional, user, data subject"
                 }
             ]
         },
@@ -1383,6 +1383,10 @@
                 {
                     "name": "serviceLocation",
                     "value": "United States and may be disclosed to our service providers and affiliates in other jurisdictions."
+                },
+                {
+                    "name": "iso_42001_roles",
+                    "value": "operator, tester and evaluator, deployer, governance and oversight professional, user, data subject"
                 }
             ]
         },
@@ -1435,6 +1439,10 @@
                 {
                     "name": "serviceLocation",
                     "value": "United States and may be disclosed to our service providers and affiliates in other jurisdictions."
+                },
+                {
+                    "name": "iso_42001_roles",
+                    "value": "operator, tester and evaluator, deployer, governance and oversight professional, user, data subject"
                 }
             ]
         },
@@ -1474,6 +1482,10 @@
                 {
                     "name": "serviceLocation",
                     "value": "United States and may be disclosed to our service providers and affiliates in other jurisdictions."
+                },
+                {
+                    "name": "iso_42001_roles",
+                    "value": "operator, tester and evaluator, deployer, governance and oversight professional, user, data subject"
                 }
             ]
         },
@@ -1941,6 +1953,10 @@
                 {
                     "name": "serviceLocation",
                     "value": "Unspecified, but company is located in India. See provider/url for Privacy Policy."
+                },
+                {
+                    "name": "iso_42001_roles",
+                    "value": "tester and evaluator, deployer, governance and oversight professional, user, data subject"
                 }
             ]
         }
