@@ -1331,7 +1331,7 @@
                 },
                 {
                     "name": "iso_42001_roles",
-                    "value": "operator, tester and evaluator, deployer, governance and oversight professional, user, data subject"
+                    "value": "tester and evaluator, deployer, governance and oversight professional, user, data subject"
                 }
             ]
         },
@@ -1386,7 +1386,7 @@
                 },
                 {
                     "name": "iso_42001_roles",
-                    "value": "operator, tester and evaluator, deployer, governance and oversight professional, user, data subject"
+                    "value": "tester and evaluator, deployer, governance and oversight professional, user, data subject"
                 }
             ]
         },
@@ -1442,7 +1442,7 @@
                 },
                 {
                     "name": "iso_42001_roles",
-                    "value": "operator, tester and evaluator, deployer, governance and oversight professional, user, data subject"
+                    "value": "tester and evaluator, deployer, governance and oversight professional, user, data subject"
                 }
             ]
         },
@@ -1485,7 +1485,7 @@
                 },
                 {
                     "name": "iso_42001_roles",
-                    "value": "operator, tester and evaluator, deployer, governance and oversight professional, user, data subject"
+                    "value": "tester and evaluator, deployer, governance and oversight professional, user, data subject"
                 }
             ]
         },
@@ -1956,7 +1956,7 @@
                 },
                 {
                     "name": "iso_42001_roles",
-                    "value": "tester and evaluator, deployer, governance and oversight professional, user, data subject"
+                    "value": "deployer, user, data subject"
                 }
             ]
         }
