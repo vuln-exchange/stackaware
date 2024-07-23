@@ -63,6 +63,35 @@
         },
         {
             "type": "service",
+            "name": "Riverside FM",
+            "provider": {
+                "name": "RiversideFM, Inc.",
+                "url": [
+                    "https://riverside.fm/privacy-policy"
+                ]
+            },
+            "description": "Podcast recording",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "We and our authorized Service Providers...maintain, store and process personal data in jurisdictions including the United States (US), European Union (EU), United Kingdom (UK), Israel, the Philippines, and other locations, as reasonably necessary for the proper performance and delivery of our Services, or as may be required by law."
+                }
+            ]
+        },
+        {
+            "type": "service",
             "name": "Postman",
             "provider": {
                 "name": "Postman, Inc.",
