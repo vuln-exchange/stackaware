@@ -924,53 +924,6 @@
         },
         {
             "type": "service",
-            "name": "Zoom",
-            "provider": {
-                "name": "Zoom Video Communications, Inc.",
-                "url": [
-                    "https://explore.zoom.us/en/privacy/"
-                ]
-            },
-            "description": "Video communications",
-            "authenticated": true,
-            "x-trust-boundary": true,
-            "data": [
-                {
-                    "flow": "bi-directional",
-                    "classification": "Public"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Public-Personal Data"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-Personal Data"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-Internal"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-External"
-                }
-            ],
-            "externalReferences": [
-                {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
-                    "type": "formulation"
-                }
-            ],
-            "properties": [
-                {
-                    "name": "serviceLocation",
-                    "value": "USA"
-                }
-            ]
-        },
-        {
-            "type": "service",
             "name": "Jira Cloud",
             "provider": {
                 "name": "Atlassian Corporation Plc",
@@ -1674,6 +1627,38 @@
             ]
         },
         {
+            "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#squarespace",
+            "provider": {
+                "name": "Squarespace, Inc.",
+                "url": [
+                    "https://www.squarespace.com/privacy"
+                ]
+            },
+            "type": "service",
+            "name": "Squarespace",
+            "description": "Domain host",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "We transfer personal data to Squarespace, Inc. in the US from, as applicable, the EEA, Switzerland and the UK pursuant to the EU-U.S. Data Privacy Framework, the Swiss-U.S. Data Privacy Framework and the UK Extension to the EU-U.S. Data Privacy Frameworks (each individually and jointly, the “Data Privacy Frameworks”). In accordance with Article 45 of the GDPR, an adequacy decision was adopted for the EU-U.S., Swiss-US and UK Extension to the EU-US Data Privacy Frameworks."
+                }
+            ]
+        },
+        {
             "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#maven",
             "provider": {
                 "name": "Maven Learning, Inc.",
@@ -1706,50 +1691,6 @@
                 {
                     "name": "serviceLocation",
                     "value": "United States"
-                }
-            ]
-        },
-        {
-            "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#docsend",
-            "type": "service",
-            "name": "DocSend",
-            "provider": {
-                "name": "DocSend, Inc.",
-                "url": [
-                    "https://www.docsend.com/privacy-policy/"
-                ]
-            },
-            "description": "Document processing and eSignature",
-            "authenticated": true,
-            "x-trust-boundary": true,
-            "data": [
-                {
-                    "flow": "bi-directional",
-                    "classification": "Public"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Public-Personal Data"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-Personal Data"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-External"
-                }
-            ],
-            "externalReferences": [
-                {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
-                    "type": "formulation"
-                }
-            ],
-            "properties": [
-                {
-                    "name": "serviceLocation",
-                    "value": "Various. See provider/url for details."
                 }
             ]
         },
