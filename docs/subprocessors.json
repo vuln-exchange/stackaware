@@ -158,6 +158,45 @@
         },
         {
             "type": "service",
+            "name": "Thatch.ai",
+            "provider": {
+                "name": "Thatch Health, Inc.",
+                "url": [
+                    "https://thatch.ai/privacy"
+                ]
+            },
+            "description": "Health benefits platform manager",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "USA"
+                }
+            ]
+        },
+        {
+            "type": "service",
             "name": "Microsoft 365",
             "provider": {
                 "name": "Microsoft, Inc.",
