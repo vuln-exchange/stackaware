@@ -1718,6 +1718,10 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
                 }
             ],
             "externalReferences": [
