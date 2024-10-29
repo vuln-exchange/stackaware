@@ -33,8 +33,26 @@
                 {
                     "name": "serviceLocation",
                     "value": "Not specified"
+                },
+                {
+                    "name": "personal_data_processing_justification",
+                    "value": "This company hosts StackAware’s Trust and Security Center and may need to process email addresses to send notifications."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://trust.safebase.io/?itemUid=ef061e5b-a2f4-469e-92bc-ab973e3d7842&source=search"
+                },                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://trust.safebase.io/?itemUid=4ea65d1e-79fb-47cf-95a8-bdb24d2d6a4b&source=title"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "via Google oAuth"
                 }
-            ]
+            ],
+            "tags":
+                ["service_delivery",
+                "marketing"]
         },
         {
             "type": "service",
@@ -58,8 +76,22 @@
                 {
                     "name": "serviceLocation",
                     "value": "We are based in the United States and, unless we expressly agree otherwise, we may host, transfer, and process data, including personal information, in the United States and in other countries through Workona affiliates and third parties that we use to operate and manage the Services. These countries may have data protection laws that are different from those of your country of residence. Workona uses a variety of safeguards, including contractual and technical measures, to protect the data we transfer."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://workona.com/help/security/"
+                },
+                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://workona.com/help/security/"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "via Google oAuth"
                 }
-            ]
+            ],
+            "tags":
+                ["service_delivery"]
         },
         {
             "type": "service",
@@ -87,8 +119,22 @@
                 {
                     "name": "serviceLocation",
                     "value": "We and our authorized Service Providers...maintain, store and process personal data in jurisdictions including the United States (US), European Union (EU), United Kingdom (UK), Israel, the Philippines, and other locations, as reasonably necessary for the proper performance and delivery of our Services, or as may be required by law."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "end-to-end call and recording encryption as standard as per https://riverside.fm/business"
+                },                {
+                    "name": "data_in_transit_encryption",
+                    "value": "TLS 1.3 as verified on 29 Octoboer 2024"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "via Google oAuth"
                 }
-            ]
+            ],
+            "tags":
+                ["service_delivery",
+                "marketing"]
         },
         {
             "type": "service",
@@ -116,8 +162,21 @@
                 {
                     "name": "serviceLocation",
                     "value": "Postman's primary hosting facilities are in the United States. Whenever we transfer your information, we take steps to protect it."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://security.postman.com/?deviceId=19b8a413-8b80-49f9-80e0-3b92cd0421fc&itemUid=ef061e5b-a2f4-469e-92bc-ab973e3d7842&source=click"
+                },                {
+                    "name": "data_in_transit_encryption",
+                    "value": "TLS 1.3 as verified on 29 OCT 2024"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "via Google oAuth"
                 }
-            ]
+            ],
+            "tags":
+            ["service_delivery"]
         },
         {
             "type": "service",
@@ -153,8 +212,22 @@
                 {
                     "name": "serviceLocation",
                     "value": "USA, Canada"
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://support.1password.com/authentication-encryption"
+                },
+                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://support.1password.com/authentication-encryption"
+                },
+                {
+                    "name": "mfa_method",
+                    "value": "Authenticator app"
                 }
-            ]
+            ],
+            "tags":
+            ["service_delivery"]
         },
         {
             "type": "service",
@@ -192,8 +265,22 @@
                 {
                     "name": "serviceLocation",
                     "value": "USA"
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://thatch.ai/privacy"
+                },
+                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://thatch.ai/privacy"
+                },
+                {
+                    "name": "mfa_method",
+                    "value": "None"
                 }
-            ]
+            ],
+            "tags":
+            ["internal_only"]
         },
         {
             "type": "service",
@@ -239,8 +326,26 @@
                 {
                     "name": "serviceLocation",
                     "value": "USA"
+                },
+                {
+                    "name": "personal_data_processing_justification",
+                    "value": "Names, email addresses, and other data may be processed while using these services  and tools."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://learn.microsoft.com/en-us/purview/data-encryption-in-odb-and-spo"
+                },
+                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://learn.microsoft.com/en-us/purview/data-encryption-in-odb-and-spo"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "Authenticator app"
                 }
-            ]
+            ],
+            "tags":
+            ["service_delivery"]
         },
         {
             "type": "service",
@@ -274,8 +379,22 @@
                 {
                     "name": "serviceLocation",
                     "value": "The Service is operated from the United States and your Personal Information is processed by us in the United States. If you are located in another jurisdiction, it is important to note that the privacy laws in the United States may not be as comprehensive as those in other countries. Where we share Personal Information with service providers and other third parties in the United States and other countries, we use safeguards to protect your Personal Information consistent with this Privacy Policy and applicable laws."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://carrd.co/docs/general/privacy"
+                },
+                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://carrd.co/docs/general/privacy"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "Authenticator app"
                 }
-            ]
+            ],
+            "tags":
+            ["marketing"]
         },
         {
             "type": "service",
