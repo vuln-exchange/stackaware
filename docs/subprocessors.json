@@ -428,8 +428,21 @@
                 {
                     "name": "serviceLocation",
                     "value": "The location of the servers is geographically in Germany. If you are using our service from the US, we are using servers geographically in the US. We select the geographically nearest servers based on your IP address location."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "hhttps://cloudconvert.com/security"
+                },                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://cloudconvert.com/security"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "via Google oAuth"
                 }
-            ]
+            ],
+            "tags":
+                ["marketing"]
         },
         {
             "type": "service",
@@ -459,8 +472,21 @@
                 {
                     "name": "serviceLocation",
                     "value": "We do not store or transmit your personal data outside of UK. Bear in mind that controllers which use our services (where we are their processor), may choose to do so."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://drawio-app.com/security/"
+                },                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://drawio-app.com/security/"
+                },
+		{
+                    "name": "mfa_method",
+                    "value": "via Google oAuth"
                 }
-            ]
+            ],
+            "tags":
+                ["marketing"]
         },
         {
             "type": "service",
@@ -506,8 +532,26 @@
                 {
                     "name": "serviceLocation",
                     "value": "Personal Data collected through our Services may be stored and processed in the United States or any other country in which Mercury or its affiliates or service providers maintain facilities. See provider/url for details."
+                },
+                {
+                    "name": "personal_data_processing_justification",
+                    "value": "This is StackAware’s financial technology provider and how we process invoices. It may need to process names, email addresses, and phone numbers."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://mercury.com/security"
+                },
+		{
+                    "name": "data_in_transit_encryption",
+                    "value": "https://mercury.com/security"
+                },
+		{
+                    "name": "mfa_method",
+                    "value": "Authenticator app"
                 }
-            ]
+            ],
+            "tags":
+                ["service_delivery"]
         },
         {
             "type": "service",
@@ -549,8 +593,21 @@
                 {
                     "name": "serviceLocation",
                     "value": "All information processed by us or our service providers may be transferred, processed, or stored anywhere in the world, including in countries that may have data protection laws that are different from the laws where you live. Your information may be accessible to the courts, law enforcement, and national security authorities of the United States."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://gusto.com/security"
+                },                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://gusto.com/security"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "via Google oAuth"
                 }
-            ]
+            ],
+            "tags":
+            ["internal_only"]
         },
         {
             "type": "service",
@@ -600,8 +657,26 @@
                 {
                     "name": "serviceLocation",
                     "value": "USA"
+                },
+                {
+                    "name": "personal_data_processing_justification",
+                    "value": "As the primary business tool for StackAware, Google Workspace may need to process names, email addresses, and physical likenesses of persons."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://workspace.google.com/security/"
+                },                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://workspace.google.com/security/"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "Authenticator app"
                 }
-            ]
+            ],
+            "tags":
+                ["service_delivery",
+                "marketing"]
         },
         {
             "type": "service",
@@ -612,7 +687,7 @@
                     "https://policies.google.com/privacy"
                 ]
             },
-            "description": "Business productivity suite",
+            "description": "Analytics platform",
             "authenticated": true,
             "x-trust-boundary": true,
             "data": [
@@ -635,8 +710,21 @@
                 {
                     "name": "serviceLocation",
                     "value": "USA"
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://support.google.com/analytics/answer/6004245?hl=en"
+                },                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://support.google.com/analytics/answer/6004245?hl=en"
+                },
+		{
+                    "name": "mfa_method",
+                    "value": "via Google oAuth"
                 }
-            ]
+            ],
+            "tags":
+                ["marketing"]
         },
 {
     "type": "service",
@@ -670,8 +758,21 @@
         {
             "name": "serviceLocation",
             "value": "TalentKit Limited may share your Personal Data with certain third-party service providers to facilitate the provision of our Services. This includes sharing data with TalentKit doo (Veljka Dugosevica 54, 11050 Belgrade, Serbia), our main provider of software, maintenance, and support, which holds an ISO27001 license. Such collaboration ensures the seamless delivery of our services to you. We take great care in selecting our partners and ensure that any transfer of your Personal Data complies with applicable laws and regulations. Some of our partners, including TalentKit doo, may be located in countries outside of the EU. We require that transfers of your Personal Data to such partners are subject to appropriate safeguards, including contractual arrangements approved by the European Commission, to ensure an adequate level of protection."
-        }
-    ]
+        },
+	{
+	    "name": "data_at_rest_encryption",
+	    "value": "https://authoredup.com/privacy"
+	},                {
+	    "name": "data_in_transit_encryption",
+	    "value": "https://authoredup.com/privacy"
+	},
+	{
+	    "name": "mfa_method",
+	    "value": "None"
+	}
+    ],
+            "tags":
+                ["marketing"]
 },
 
         {
@@ -706,8 +807,14 @@
                 {
                     "name": "serviceLocation",
                     "value": "USA"
+                },
+		{
+                    "name": "mfa_method",
+                    "value": "via Google oAuth"
                 }
-            ]
+            ],
+            "tags":
+                ["marketing"]
         },
         {
             "type": "service",
@@ -726,6 +833,10 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public"
+                },
+	        {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
                 }
             ],
             "externalReferences": [
@@ -743,7 +854,9 @@
                     "name": "serviceLocation",
                     "value": "Your information collected through the Service will be stored and processed in the United States, Australia, Singapore, European Union, United Kingdom, Philippines and New Zealand and any other country in which Canva or its subsidiaries, affiliates or service providers maintain facilities or employ staff or contractors."
                 }
-            ]
+            ],
+            "tags":
+                ["marketing"]
         },
         {
             "type": "service",
@@ -789,8 +902,26 @@
                 {
                     "name": "serviceLocation",
                     "value": "In accordance with and as permitted by applicable law and regulations, we reserve the right to transfer your information, process and store it outside your country of residence to wherever we or our third party service providers operate."
+                },
+	    	{
+                    "name": "personal_data_processing_justification",
+                    "value": "This is StackAware’s accounting software. It may need to process names, email addresses, and phone numbers."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://quickbooks.intuit.com/learn-support/en-us/help-article/banking/privacy-security-quickbooks/L7q2gUqfM_US_en_US"
+                },
+		{
+                    "name": "data_in_transit_encryption",
+                    "value": "https://quickbooks.intuit.com/learn-support/en-us/help-article/banking/privacy-security-quickbooks/L7q2gUqfM_US_en_US"
+                },
+		{
+                    "name": "mfa_method",
+                    "value": "SMS to VoIP"
                 }
-            ]
+            ],
+            "tags":
+                ["service_delivery"]
         },
         {
             "type": "service",
@@ -824,8 +955,14 @@
                 {
                     "name": "serviceLocation",
                     "value": "The Services are intended for access and use in the United States. Any information TaxAct collects about you may be stored, transferred, processed, and/or accessed by us in the United States, or to the extent permitted by law, any other country where we or our vendors operate. Please know that personal information may be transferred to, and maintained on, computers not in the state or country where you live, meaning the privacy laws could differ from and may not be as protective as those where you live. If you are located outside the United States and allow us to collect personal information about you, please be aware that TaxAct may, where permitted by law, transfer your personal information to other countries, including the United States, and process and store it there. By allowing collection of your personal information, you consent to having your personal data transferred to, processed, and stored in the United States."
+                },
+		{
+                    "name": "mfa_method",
+                    "value": "Authenticator app"
                 }
-            ]
+            ],
+            "tags":
+            ["internal_only"]
         },
         {
             "type": "service",
@@ -968,8 +1105,26 @@
                 {
                     "name": "serviceLocation",
                     "value": "USA"
+                },
+                {
+                    "name": "personal_data_processing_justification",
+                    "value": "As the host for some StackAware data processing activities, Google Cloud may need to processes email addresses to send notifications."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://cloud.google.com/docs/security/encryption/default-encryption"
+                },                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://cloud.google.com/load-balancing/docs/ssl-policies-concepts"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "via Google oAuth"
                 }
-            ]
+
+            ],
+            "tags":
+                ["service_delivery"]
         },
         {
             "type": "service",
@@ -1077,8 +1232,27 @@
                 {
                     "name": "serviceLocation",
                     "value": "USA"
+                },
+                {
+                    "name": "personal_data_processing_justification",
+                    "value": "This company allows StackAware to schedule meetings and may need to process names, email addresses, and phone numbers to send notifications and calendar invitations."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://calendly.com/security"
+                },                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://calendly.com/security"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "via Google oAuth"
                 }
-            ]
+
+            ],
+            "tags":
+                ["service_delivery",
+                "marketing"]
         },
         {
             "type": "service",
