@@ -125,7 +125,7 @@
                     "value": "end-to-end call and recording encryption as standard as per https://riverside.fm/business"
                 },                {
                     "name": "data_in_transit_encryption",
-                    "value": "TLS 1.3 as verified on 29 Octoboer 2024"
+                    "value": "TLS 1.3 as verified on 29 October 2024"
                 },
 		        {
                     "name": "mfa_method",
