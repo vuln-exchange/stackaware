@@ -349,6 +349,59 @@
         },
         {
             "type": "service",
+            "name": "Checkr",
+            "provider": {
+                "name": "Checkr, Inc.",
+                "url": [
+                    "https://checkr.com/legal/privacy-policy"
+                ]
+            },
+            "description": "Background check tool",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "Checkr uses infrastructure primarily located and operated in the United States. Checkr may also use partners or affiliates located in countries outside the US to store, process, and transmit your information. If you are located in the EEA, the UK, Canada (including Quebec), or another region with comparable data protection laws, your personal information may be transferred to a jurisdiction that does not have the same level of legal protections."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://security.checkr.com/?itemName=data_security&source=click&itemUid=ef061e5b-a2f4-469e-92bc-ab973e3d7842"
+                },
+                {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://security.checkr.com/?itemUid=4ea65d1e-79fb-47cf-95a8-bdb24d2d6a4b&source=title"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "none"
+                }
+            ],
+            "tags":
+            ["internal_only"]
+        },
+        {
+            "type": "service",
             "name": "Carrd",
             "provider": {
                 "name": "Carrd, Inc.",
