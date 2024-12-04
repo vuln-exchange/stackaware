@@ -180,6 +180,41 @@
         },
         {
             "type": "service",
+            "name": "GitHub",
+            "provider": {
+                "name": "GitHub, Inc.",
+                "url": [
+                    "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                ]
+            },
+            "description": "Code repository",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "GitHub stores and processes Personal Data in a variety of locations, including your local region, the United States, and other countries where GitHub, its affiliates, subsidiaries, or subprocessors have operations. We transfer Personal Data from the European Union, the United Kingdom, and Switzerland to countries that the European Commission has not recognized as having an adequate level of data protection."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://github.blog/changelog/2019-05-23-git-data-encryption-at-rest/"
+                },
+		        {
+                    "name": "mfa_method",
+                    "value": "authenticator app"
+                }
+            ],
+            "tags":
+            ["marketing"]
+        },
+        {
+            "type": "service",
             "name": "1Password",
             "provider": {
                 "name": "AgileBits Inc.",
@@ -257,7 +292,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -318,7 +353,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -375,7 +410,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -424,7 +459,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -473,7 +508,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -517,7 +552,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -577,7 +612,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -638,7 +673,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -698,11 +733,11 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 },
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-restricted-data",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-anonymized-confidential-data",
                     "type": "forumation"
                 }
             ],
@@ -755,7 +790,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -803,7 +838,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -856,7 +891,7 @@
     ],
     "externalReferences": [
         {
-            "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+            "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
             "type": "formulation"
         }
     ],
@@ -905,7 +940,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -947,11 +982,11 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 },
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#generative-ai-training-public-data",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1000,7 +1035,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1053,7 +1088,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1095,7 +1130,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1131,7 +1166,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1168,7 +1203,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1205,7 +1240,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1240,7 +1275,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1279,7 +1314,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1342,7 +1377,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1407,7 +1442,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1471,7 +1506,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1536,7 +1571,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1556,7 +1591,7 @@
                     "https://zapier.com/privacy"
                 ]
             },
-            "description": "No-code automation. Zapier's AI supplementary terms allow for generative AI training on the outputs of user-generated queries, but StackAware has not opted into these terms. If it does, we will create a separate service to depict this relationship",
+            "description": "No-code automation. Zapier's AI supplementary terms allow for predictive-ai-training-public-data AI training on the outputs of user-generated queries, but StackAware has not opted into these terms. If it does, we will create a separate service to depict this relationship",
             "authenticated": true,
             "x-trust-boundary": true,
             "data": [
@@ -1583,7 +1618,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1643,7 +1678,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1678,11 +1713,11 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 },
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#generative-ai-training-public-data",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1697,7 +1732,7 @@
                 },
                 {
                     "name": "personal_data_processing_justification",
-                    "value": "This is generative artificial intelligence providers used for processing unstructured data. It will process names, email addresses, and phone numbers. OpenAI is included in the scope of StackAware’s ISO 42001 certification."
+                    "value": "This is predictive-ai-training-public-data artificial intelligence providers used for processing unstructured data. It will process names, email addresses, and phone numbers. OpenAI is included in the scope of StackAware’s ISO 42001 certification."
                 },
                 {
                     "name": "data_at_rest_encryption",
@@ -1752,11 +1787,11 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 },
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#generative-ai-training-public-data",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1771,7 +1806,7 @@
                 },
                 {
                     "name": "personal_data_processing_justification",
-                    "value": "This is generative artificial intelligence providers used for processing unstructured data. It will process names, email addresses, and phone numbers. OpenAI is included in the scope of StackAware’s ISO 42001 certification."
+                    "value": "This is predictive-ai-training-public-data artificial intelligence providers used for processing unstructured data. It will process names, email addresses, and phone numbers. OpenAI is included in the scope of StackAware’s ISO 42001 certification."
                 },
                 {
                     "name": "data_at_rest_encryption",
@@ -1827,11 +1862,11 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 },
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#generative-ai-training-public-data",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1846,7 +1881,7 @@
                 },
                 {
                     "name": "personal_data_processing_justification",
-                    "value": "This is generative artificial intelligence providers used for processing unstructured data. It will process names, email addresses, and phone numbers. OpenAI is included in the scope of StackAware’s ISO 42001 certification."
+                    "value": "This is predictive-ai-training-public-data artificial intelligence providers used for processing unstructured data. It will process names, email addresses, and phone numbers. OpenAI is included in the scope of StackAware’s ISO 42001 certification."
                 },
                 {
                     "name": "data_at_rest_encryption",
@@ -1889,11 +1924,11 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 },
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#generative-ai-training-public-data",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -1908,7 +1943,7 @@
                 },
                 {
                     "name": "personal_data_processing_justification",
-                    "value": "This is generative artificial intelligence providers used for processing unstructured data. It will process names, email addresses, and phone numbers. OpenAI is included in the scope of StackAware’s ISO 42001 certification."
+                    "value": "This is predictive-ai-training-public-data artificial intelligence providers used for processing unstructured data. It will process names, email addresses, and phone numbers. OpenAI is included in the scope of StackAware’s ISO 42001 certification."
                 },
                 {
                     "name": "data_at_rest_encryption",
@@ -1962,7 +1997,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -2022,7 +2057,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -2064,7 +2099,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -2096,7 +2131,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -2134,7 +2169,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -2178,7 +2213,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ]
@@ -2204,7 +2239,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -2246,7 +2281,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -2290,7 +2325,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -2341,7 +2376,7 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -2455,11 +2490,11 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 },
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#generative-ai-training-public-data",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -2498,11 +2533,11 @@
             ],
             "externalReferences": [
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
                 },
                 {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#generative-ai-training-public-data",
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data-ai-training-public-data",
                     "type": "formulation"
                 }
             ],
@@ -2563,7 +2598,7 @@
         {
             "workflows": [
                 {
-                    "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+                    "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "uid": "Not applicable.",
                     "name": "Predictive AI training using metadata",
                     "description": "Many modern applications and services conduct predictive AI training on the metadata of customer activity and information for the purposes of fraud detection, spam filtering, and service improvement.",
@@ -2579,10 +2614,10 @@
                     "taskTypes": "other"
                 },
                 {
-                    "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#generative-ai-training-public-data",
+                    "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data-ai-training-public-data",
                     "uid": "Not applicable.",
-                    "name": "Generative AI training with Public Data.",
-                    "description": "Many large technology companies train generative AI models using publicly availabile data such as on internet-facing websites or social media posts.",
+                    "name": "predictive-ai-training-public-data AI training with Public Data.",
+                    "description": "Many large technology companies train predictive-ai-training-public-data AI models using publicly availabile data such as on internet-facing websites or social media posts.",
                     "resourceReferences": [
                         {
                             "externalReference": {
@@ -2595,7 +2630,7 @@
                     "taskTypes": "other"
                 },
                 {
-                    "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-restricted-data",
+                    "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-anonymized-confidential-data",
                     "uid": "Not applicable.",
                     "name": "Predictive AI training with Restricted Data.",
                     "description": "Especially in the case of spam filtering and fraud detection, some providers do train predictive AI models using non-public information.",
