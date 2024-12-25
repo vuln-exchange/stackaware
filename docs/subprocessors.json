@@ -697,6 +697,54 @@
             "tags":
             ["internal_only"]
         },
+	    {
+            "type": "service",
+            "name": "Gemini",
+            "provider": {
+                "name": "Gemini Trust Company, LLC",
+                "url": [
+                    "https://www.gemini.com/legal/privacy-policy#"
+                ]
+            },
+            "description": "Cryptocurrency exchange",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Internal"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "Gemini is a global business. As a result, Personal Information may be stored and processed in any country where we have operations or where we engage service providers. We may transfer Personal Information that we maintain about you to recipients in countries other than the country in which the Personal Information was originally collected. Those other countries may have data protection or privacy rules that are different from those of your country. However, we will take measures to ensure that any such transfers comply with applicable data protection laws and that your Personal Information remains protected to the standards described in this Privacy Policy. In certain circumstances, courts, law enforcement agencies, regulatory agencies or security authorities in those other countries may be entitled to access your Personal Information."},
+		{
+                    "name": "mfa_method",
+                    "value": "authenticator_app"
+                }
+            ],
+            "tags":
+            ["internal_only"]
+        },
         {
             "type": "service",
             "name": "Google Workspace",
