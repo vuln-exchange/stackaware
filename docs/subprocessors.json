@@ -93,6 +93,41 @@
             "tags":
                 ["service_delivery"]
         },
+	    {
+            "type": "service",
+            "name": "Probe",
+            "provider": {
+                "name": "Splx.ai",
+                "url": [
+                    "https://splx.ai/legal/privacy-policy"
+                ]
+            },
+            "description": "AI red-teaming platform",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+		{
+                    "flow": "bi-directional",
+                    "classification": "Confidential-External"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "StackAware currently only uses the United States-based instance of Splx.ai."
+                },
+		{
+                    "name": "mfa_method",
+                    "value": "via Google oAuth"
+                }
+            ],
+            "tags":
+                ["service_delivery"]
+        },
         {
             "type": "service",
             "name": "Riverside FM",
