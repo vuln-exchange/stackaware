@@ -1674,7 +1674,7 @@
                     "https://zapier.com/privacy"
                 ]
             },
-            "description": "No-code automation. Zapier's AI supplementary terms allow for predictive-ai-training-public-data AI training on the outputs of user-generated queries, but StackAware has not opted into these terms. If it does, we will create a separate service to depict this relationship",
+            "description": "No-code automation. This includes Zapier AI, although StackAware has opted out of training on content for both Zapier's underlying service and AI feature set.",
             "authenticated": true,
             "x-trust-boundary": true,
             "data": [
@@ -1703,6 +1703,10 @@
                 {
                     "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
                     "type": "formulation"
+                },
+		{
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-anonymized-confidential-data",
+                    "type": "formulation"
                 }
             ],
             "properties": [
@@ -1721,7 +1725,7 @@
                     "name": "data_in_transit_encryption",
                     "value": "https://help.zapier.com/hc/en-us/articles/8496181993613-Security-and-Compliance"
                 },
-		        {
+		{
                     "name": "mfa_method",
                     "value": "Via Google oAuth"
                 }
