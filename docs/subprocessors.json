@@ -354,71 +354,6 @@
         },
         {
             "type": "service",
-            "name": "Microsoft 365",
-            "provider": {
-                "name": "Microsoft, Inc.",
-                "url": [
-                    "https://privacy.microsoft.com/en-us/privacystatement"
-                ]
-            },
-            "description": "Business productivity suite",
-            "authenticated": true,
-            "x-trust-boundary": true,
-            "data": [
-                {
-                    "flow": "bi-directional",
-                    "classification": "Public"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Public-Personal Data"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-Personal Data"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-Internal"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-External"
-                }
-            ],
-            "externalReferences": [
-                {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
-                    "type": "formulation"
-                }
-            ],
-            "properties": [
-                {
-                    "name": "serviceLocation",
-                    "value": "USA"
-                },
-                {
-                    "name": "personal_data_processing_justification",
-                    "value": "Names, email addresses, and other data may be processed while using these services  and tools."
-                },
-                {
-                    "name": "data_at_rest_encryption",
-                    "value": "https://learn.microsoft.com/en-us/purview/data-encryption-in-odb-and-spo"
-                },
-                {
-                    "name": "data_in_transit_encryption",
-                    "value": "https://learn.microsoft.com/en-us/purview/data-encryption-in-odb-and-spo"
-                },
-		        {
-                    "name": "mfa_method",
-                    "value": "Authenticator app"
-                }
-            ],
-            "tags":
-            ["service_delivery"]
-        },
-        {
-            "type": "service",
             "name": "Checkr",
             "provider": {
                 "name": "Checkr, Inc.",
@@ -1309,41 +1244,6 @@
                 ]
             },
             "description": "Identity and access management ",
-            "authenticated": true,
-            "x-trust-boundary": true,
-            "data": [
-                {
-                    "flow": "bi-directional",
-                    "classification": "Public"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Public-Personal Data"
-                }
-            ],
-            "externalReferences": [
-                {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
-                    "type": "formulation"
-                }
-            ],
-            "properties": [
-                {
-                    "name": "serviceLocation",
-                    "value": "USA"
-                }
-            ]
-        },
-        {
-            "type": "service",
-            "name": "Slack",
-            "provider": {
-                "name": "Slack Technologies, LLC",
-                "url": [
-                    "https://slack.com/trust/privacy/privacy-policy"
-                ]
-            },
-            "description": "Business communication",
             "authenticated": true,
             "x-trust-boundary": true,
             "data": [
