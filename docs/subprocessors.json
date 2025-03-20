@@ -2327,6 +2327,72 @@
                 "marketing"]
         },
 	    {
+            "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#imessage",
+            "type": "service",
+            "name": "iMessage",
+            "provider": {
+                "name": "Apple Inc.",
+                "url": [
+                    "https://www.apple.com/legal/privacy/data/en/messages/"
+                ]
+            },
+            "description": "Messaging service",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Internal"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-External"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "[Y]our personal data may be transferred to or accessed by entities around the world, including Apple-affiliated companies, to perform processing activities such as those described in this Privacy Policy in connection with your use of our products and services. Apple complies with laws on the transfer of personal data between countries to help ensure your data is protected, wherever it may be."
+                },
+                {
+                    "name": "personal_data_processing_justification",
+                    "value": "Passing verification codes and other sensitive information out-of-band using end-to-end encryption is a security best practices. During the engagement it is likely we will process phone numbers, names, and other personal data in the process of doing so."
+                },
+                {
+                    "name": "data_at_rest_encryption",
+                    "value": "https://support.apple.com/guide/security/imessage-security-overview-secd9764312f"
+                },
+		    {
+                    "name": "data_in_transit_encryption",
+                    "value": "https://support.apple.com/guide/security/imessage-security-overview-secd9764312f"
+                },
+		{
+                    "name": "mfa_method",
+                    "value": "Biometric"
+                }
+            ],
+            "tags":
+                ["service_delivery"]
+        },
+	    {
             "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#whatsapp",
             "type": "service",
             "name": "WhatsApp",
@@ -2391,12 +2457,13 @@
             ],
             "tags":
                 ["service_delivery"]
-        },{
+        },
+	    {
             "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#signal",
             "type": "service",
             "name": "Signal",
             "provider": {
-                "name": "WhatsApp LLC",
+                "name": "Signal Messenger LLC.",
                 "url": [
                     "https://signal.org/legal/"
                 ]
