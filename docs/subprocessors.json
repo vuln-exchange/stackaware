@@ -2327,6 +2327,64 @@
                 "marketing"]
         },
 	    {
+            "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#apple_intelligence",
+            "type": "service",
+            "name": "Apple Intelligence",
+            "provider": {
+                "name": "Apple Inc.",
+                "url": [
+                    "https://support.apple.com/guide/iphone/apple-intelligence-and-privacy-iphe3f499e0e/ios"
+                ]
+            },
+            "description": "Artificial Intelligence Assistant",
+            "authenticated": true,
+            "x-trust-boundary": true,
+            "data": [
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Public-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Personal Data"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-Internal"
+                },
+                {
+                    "flow": "bi-directional",
+                    "classification": "Confidential-External"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
+                    "type": "formulation"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "serviceLocation",
+                    "value": "[Y]our personal data may be transferred to or accessed by entities around the world, including Apple-affiliated companies, to perform processing activities such as those described in this Privacy Policy in connection with your use of our products and services. Apple complies with laws on the transfer of personal data between countries to help ensure your data is protected, wherever it may be."
+                },
+                {
+                    "name": "personal_data_processing_justification",
+                    "value": "StackAware leverages Apple Intelligence to accelerate service delivery and may need to process personal data during interactions with the tool, such as names and email addresses."
+                },
+		{
+                    "name": "mfa_method",
+                    "value": "Biometric"
+                }
+            ],
+            "tags":
+                ["service_delivery"]
+        },
+	    {
             "bom-ref": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#imessage",
             "type": "service",
             "name": "iMessage",
