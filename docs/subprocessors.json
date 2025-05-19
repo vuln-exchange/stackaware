@@ -1758,18 +1758,6 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public-Personal Data"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-Personal Data"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-Internal"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-Internal"
                 }
             ],
             "externalReferences": [
@@ -1833,18 +1821,6 @@
                 {
                     "flow": "bi-directional",
                     "classification": "Public-Personal Data"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-Personal Data"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-Internal"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Confidential-External"
                 }
             ],
             "externalReferences": [
@@ -1930,7 +1906,7 @@
                 },
                 {
                     "name": "personal_data_processing_justification",
-                    "value": "This is predictive-ai-training-public-data artificial intelligence providers used for processing unstructured data. It will process names, email addresses, and phone numbers. OpenAI is included in the scope of StackAware’s ISO 42001 certification."
+                    "value": "It will process names, email addresses, and phone numbers. OpenAI is included in the scope of StackAware’s ISO 42001 certification."
                 },
                 {
                     "name": "data_at_rest_encryption",
@@ -1948,6 +1924,67 @@
             "tags":
                 ["marketing"]
         },
+	{
+    "type": "service",
+    "name": "Anthropic API",
+    "provider": {
+        "name": "Anthropic PBC",
+        "url": [
+            "https://console.anthropic.com/legal/privacy"
+        ]
+    },
+    "description": "Artificial Intelligence Application Programming Interface",
+    "authenticated": true,
+    "x-trust-boundary": true,
+    "data": [
+        {
+            "flow": "bi-directional",
+            "classification": "Public"
+        },
+        {
+            "flow": "bi-directional",
+            "classification": "Public-Personal Data"
+        },
+        {
+            "flow": "bi-directional",
+            "classification": "Confidential-Personal Data"
+        },
+        {
+            "flow": "bi-directional",
+            "classification": "Confidential-Internal"
+        },
+        {
+            "flow": "bi-directional",
+            "classification": "Confidential-External"
+        }
+    ],
+    "externalReferences": [
+        {
+            "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-metadata",
+            "type": "formulation"
+        },
+        {
+            "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#generative-ai-training-public-data",
+            "type": "formulation"
+        }
+    ],
+    "properties": [
+        {
+            "name": "serviceLocation",
+            "value": "US, or to other countries outside the EEA and the UK"
+        },
+        {
+        	"name": "iso_42001_roles",
+                "value": "tester and evaluator, deployer, governance and oversight professional, user, data subject"
+        },
+        {
+                 "name": "personal_data_processing_justification",
+                "value": "It will process names, email addresses, and phone numbers. Anthropic use is included in the scope of StackAware’s ISO 42001 certification."
+        }
+    ],
+            "tags":
+                ["marketing", "service_delivery"]
+	},    
         {
             "type": "service",
             "name": "Pipedrive",
