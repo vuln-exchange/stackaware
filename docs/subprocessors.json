@@ -784,54 +784,6 @@
                 ["service_delivery",
                 "marketing"]
         },
-        {
-            "type": "service",
-            "name": "Google Analytics",
-            "provider": {
-                "name": "Google, LLC",
-                "url": [
-                    "https://policies.google.com/privacy"
-                ]
-            },
-            "description": "Analytics platform",
-            "authenticated": true,
-            "x-trust-boundary": true,
-            "data": [
-                {
-                    "flow": "bi-directional",
-                    "classification": "Public"
-                },
-                {
-                    "flow": "bi-directional",
-                    "classification": "Public-Personal Data"
-                }
-            ],
-            "externalReferences": [
-                {
-                    "urI": "urn:uuid:25ce97c5-5822-4f4b-9392-e3060860e0f3#predictive-ai-training-public-data",
-                    "type": "formulation"
-                }
-            ],
-            "properties": [
-                {
-                    "name": "serviceLocation",
-                    "value": "USA"
-                },
-                {
-                    "name": "data_at_rest_encryption",
-                    "value": "https://support.google.com/analytics/answer/6004245?hl=en"
-                },                {
-                    "name": "data_in_transit_encryption",
-                    "value": "https://support.google.com/analytics/answer/6004245?hl=en"
-                },
-		{
-                    "name": "mfa_method",
-                    "value": "via Google oAuth"
-                }
-            ],
-            "tags":
-                ["marketing"]
-        },
 	{
             "type": "service",
             "name": "Google Cloud",
