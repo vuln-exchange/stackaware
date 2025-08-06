@@ -1,4 +1,5 @@
 {
+    "DEPRECATION NOTE": "DEPRECATED AS OF AUGUST 6, 2025. See sbom.stackaware.com for current version",
     "bomFormat": "CycloneDX",
     "specVersion": "1.5",
     "version": 1707590592,
